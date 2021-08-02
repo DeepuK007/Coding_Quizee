@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="D:\Web Development\Coding Quizee\css\styles1.css">
+  <link rel="icon" href="../css/favicon.ico">
+
+  <title>Coding Quizee | Answers | C# Advanced</title>
+</head>
+
+<body>
+  <div class="container-fluid con1">
+    <div class="container-fluid co_an">
+      <h1 class="ac1">C# - Advanced Level</h1>
+      <a class="btn btn-primary but2" href="../indexans.html" role="button">Back</a>
+    </div>
+
+    <div class="container-fluid con_ans_exp">
+      <p class="main">1 .  What will be the output of the following C# code? <br> </p>
+      <p class="sub"> public class Generic<<x>T> <br>
+                        { <br>
+                        public T Field; <br>
+                        public void testSub() <br>
+                        {  <br>
+                        T i = Field + 1; <br>
+                        } <br>
+                        } <br>
+                        class Program <br>
+                        {  <br>
+                        static void Main(string[] args) <br>
+                        {  <br>
+                        Generic<<x>int>g = new Generic<<x>int>(); <br>
+                        g.testSub(); <br>
+                        } <br>
+                        } <br> </p>
+      <p class="sub1">a) code runs successfully but prints nothing <br>
+                      b) code runs successfully and prints 1 <br>
+                      c) program will give run time error <br>
+                      d) compile time error <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: Compiler will give error as operator ‘+’ is not defined for types ‘T’ and ‘int’.
+        </div>
+      </div>
+        <br>
+
+      <p class="main">2 . What will be the output of the following C# code? <br> </p>
+      <p class="sub"> class Program  <br>
+                        {  <br>
+                        static void Main(string[] args) <br>
+                        {  <br>
+                        int[] nums = { 1, -2, 3, 0, -4, 5 }; <br>
+                        var posNums = nums.Where(n => n > 0).Select(r => r*2). OrderByDescending(r=>r); <br>
+                        Console.Write("The positive values in nums: ");  <br>
+                        foreach(int i in posNums) Console.Write(i + " ");  <br>
+                        Console.WriteLine(); <br>
+                        Console.ReadLine(); <br>
+                        } <br>
+                        } <br>  </p>
+      <p class="sub1">a) code run successfully prints nothing <br>
+                      b) run time error <br>
+                      c) code run successfully prints multiple of 2 <br>
+                      d) compile time error <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: We had created the queries by using query method such as Where() and Select(). This creates a query called posNums that creates a sequence of positive values in nums in descending order using the method OrderByDescending().
+        </div>
+      </div>
+      <br>
+
+      <p class="main"> 3 . What will be the output of the following C# code? <br> </p>
+      <p class="sub"> class MyClass <br>
+                      { <br>
+                          char chrs = 'A' ; <br>
+                          public IEnumerator GetEnumerator() <br>
+                          { <br>
+                              for (int i = 20; i >=0; --i) <br>
+                              if (i == 10) yield break; <br>
+                              yield return (char)((chrs + i)); <br>
+                          } <br>
+                      } <br>
+                      class Program <br>
+                      { <br>
+                          static void Main(string[] args) <br>
+                          { <br>
+                              MyClass mc = new MyClass(); <br>
+                              foreach (char ch in mc) <br>
+                              Console.Write(ch + " "); <br>
+                              Console.WriteLine(); <br>
+                              Console.ReadLine(); <br>
+                          }
+                      } <br> </p>
+      <p class="sub1">a) Code run successfully prints nothing <br>
+                      b) A B C D E F G H I J K L M N O P Q R S T U V <br>
+                      c) U T S R Q P O N M L <br>
+                      d) Compile time error <br> </p>
+
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: The code to specify stoppage of the iterator using ‘yield break’ statement When this statement executes, the iterator signals that the end of the collection has been reached, which effectively stops the iterator.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">4 .  What will be the output of the following C# code? <br> </p>
+      <p class="sub"> class A <br>
+                         { <br>
+                           } <br>
+                        class B : A <br>
+                        { <br>
+                        } <br>
+                        class CheckCast <br>
+                        {  <br>
+                        static void Main() <br>
+                        {  <br>
+                        A a = new A(); <br>
+                        B b = new B();  <br>
+                        b = a as B;  <br>
+                        b = null;  <br>
+                        if(b==null) <br>
+                        Console.WriteLine("The cast in b = (B) a is NOT allowed."); <br>
+                        else  <br>
+                        Console.WriteLine("The cast in b = (B) a is allowed"); <br>
+                        } <br>
+                        } <br> </p>
+      <p class="sub1">a) Run time error <br>
+                      b) The cast in b = (B) a is NOT allowed <br>
+                      c) The cast in b = (B) a is allowed <br>
+                      d) Compile time error <br> </p>
+            <p class="main">Answer: b <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: since a is not a B, the cast of a to B is invalid and is prevented by the if statement.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">5 .  What will be the output of the following C# program? <br> </p>
+      <p class="sub"> #define pi using System; <br>
+                        using System.Collections.Generic; <br>
+                        using System.Linq;  <br>
+                        using System.Text; <br>
+                        using System.Threading.Tasks; <br> 
+                        namespace ConsoleApplication13 <br>
+                        {  <br>
+                        class Program <br>
+                        {  <br>
+                        static void Main(string[] args) <br>
+                        {  <br>
+                        #if (!pi) <br>
+                        Console.WriteLine("i"); <br>
+                        #else <br>
+                        Console.WriteLine("pi not define"); <br>
+                        #endif <br>
+                        Console.WriteLine("ok"); <br>
+                        Console.ReadLine(); <br>
+                        } <br>
+                        } <br>
+                        } <br> </p>
+      <p class="sub1">a) i pi not define <br>
+                      b) pi not define ok <br>
+                      c) i ok <br>
+                      d)  ok <br> </p>
+            <p class="main">Answer: b <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: The defined symbol ‘pi’ when compared as per ‘if’ condition, hence the outcome is false which results in skip of statement and hence executes statement after #else and finally the end statement after #endif.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">6 .  What will be the output of the following C# code? <br> </p>
+      <p class="sub">   class Program <br>
+                          {  <br>
+                          static void Main(string[] args) <br>
+                          {  <br>
+                          int x, y = 1; <br>
+                          x = 10;  <br>
+                          if(x != 10 && x / Convert.ToInt32(0) == 0) <br>
+                          Console.WriteLine(y); <br>
+                          else Console.WriteLine(++y); <br>
+                          Console.ReadLine(); <br>
+                          } <br>
+                          } <br> </p>
+      <p class="sub1">a) 1  <br>
+                      b) 2 <br>
+                      c) Run time error <br>
+                      d) Compile time error <br> </p>
+            <p class="main">Answer: b <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+      Explanation: Both conditions for if statements are failed and hence statement after else is executed.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">7 .  What will be the output of the following C# program? <br> </p>
+      <p class="sub">  class Program  <br>
+                          {  <br>
+                          static void Main(string[] args) <br>
+                          {  <br>
+                          int ch;  <br>
+                          HttpWebRequest req = (HttpWebRequest) WebRequest.Create("http://www.McGraw-Hill.com"); <br>
+                          HttpWebResponse resp = (HttpWebResponse) req.GetResponse();  <br>
+                          Stream istrm = resp.GetResponseStream();  <br>
+                          for (int i = 1 ; ;i++)  <br>
+                          {  <br>
+                          ch = istrm.ReadByte(); <br>
+                          if (ch == -1) <br>
+                          break;  <br>
+                          Console.Write((char)ch); <br>
+                          if ((i % 400) == 0)  <br>
+                          {  <br>
+                          Console.Write("\nPress Enter."); <br>
+                          Console.ReadLine();  <br>
+                          }  <br>
+                          } <br>
+                          resp.Close(); <br>
+                          }  <br>
+                           }  <br> </p>
+      <p class="sub1">a) html <br>
+                      b) text <br>
+                      c) html/text <br>
+                      d) text/html <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: The following program obtains the hypertext contained at a specific website. The program displays the hypertext on the screen.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">8 .  What will be the output of the following C# code? <br> </p>
+      <p class="sub">class UnsafeCode <br>
+                  { <br>
+                  unsafe static void Main() <br>
+                  { <br>
+                  int* p ; <br>
+                  int ch = 13*5; <br>
+                  p = &(ch);  <br>
+                  Console.WriteLine(Convert.ToChar(*p)); <br>
+                  if (*p == 'A') <br>
+                  Console.WriteLine(Convert.ToBoolean(1)); <br>
+                  else  <br>
+                  Console.WriteLine(Convert.ToBoolean(0)); <br>
+                  Console.ReadLine(); <br>
+                  } <br>
+                  } <br> </p>
+      <p class="sub1">  a) 65 False <br>
+                        b) 65 1 <br>
+                        c) A True <br>
+                        d) A 1 <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: Convert.Tochar(*p) = A <br>
+      Convert.ToBoolean(1) = True
+        </div>
+      </div>
+      <br>
+
+      <p class="main">9 .  What will be the output of the following C# code? <br> </p>
+      <p class="sub">  class A <br>
+                          {  <br>
+                          int i;  <br>
+                          int j; <br>
+                          public A() <br>
+                          { <br>
+                          i = 1; <br>
+                          j = 2; <br>
+                          } <br>
+                          } <br>
+                          class Program <br>
+                          { <br>
+                          static void Main(string[] args) <br>
+                          { <br>
+                          A obj1 = new A(); <br>
+                          Console.WriteLine(obj1.ToString()); <br>
+                          Console.ReadLine(); <br>
+                          } <br>
+                          } <br> </p>
+      <p class="sub1">a) True <br>
+                      b) False <br>
+                      c) String associated with obj1 <br>
+                      d) Compile time error <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: ToString() is the method of class Object, since it is the superclass of every class, every object has this method. ToString() returns the string associated with the calling object.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">10 .  What will be the output of the following C# program? <br> </p>
+      <p class="sub"> class access <br>
+                        { <br>
+                        public int x; <br>
+                        private int y;  <br>
+                        public void cal(int a, int b) <br>
+                        { <br>
+                        x = a + 1; y = b; <br>
+                        } <br>
+                        } <br>
+                        class Program <br>
+                        {  <br>
+                        static void Main(string[] args) <br>
+                        { <br>
+                        access obj = new access();  <br>
+                        obj.cal(2, 3); <br>
+                        Console.WriteLine(obj.x + " " + obj.y); <br>
+                        } <br>
+                        } <br> </p>
+      <p class="sub1">a) 3 3 <br>
+                      b) 2 3 <br>
+                      c) Run time error <br>
+                      d) Compile time error <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: ‘y’ is defined privately which cannot be accessed outside its scope.
+        </div>
+      </div>
+      <br>
+
+    </div>
+
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>

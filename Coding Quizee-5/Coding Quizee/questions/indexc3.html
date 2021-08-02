@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/styles1.css">
+  <link rel="icon" href="../css/favicon.ico">
+
+  <title>Coding Quizee | Questions | C Advanced</title>
+</head>
+
+<body>
+  <div class="container-fluid con1">
+    <div class="container-fluid con2">
+      <div class="bar bar1">
+        <p class="dar">1</p>
+      </div>
+      <div class="bar bar2">
+        <p class="dar">2</p>
+      </div>
+      <div class="bar bar3">
+        <p class="dar">3</p>
+      </div>
+      <div class="bar bar4">
+        <p class="dar">4</p>
+      </div>
+      <div class="bar bar5">
+        <p class="dar">5</p>
+      </div>
+      <div class="bar bar6">
+        <p class="dar">6</p>
+      </div>
+      <div class="bar bar7">
+        <p class="dar">7</p>
+      </div>
+      <div class="bar bar8">
+        <p class="dar">8</p>
+      </div>
+      <div class="bar bar9">
+        <p class="dar">9</p>
+      </div>
+      <div class="bar bar10">
+        <p class="dar">10</p>
+      </div>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary but1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Submit
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">C Basic</h5>
+              <button type="button" class="btn-close cls" data-bs-dismiss="modal" aria-label="Close">X</button>
+            </div>
+            <div class="modal-body bod">
+              <ul>
+                <li class="f"></li>
+                <li class="s"></li>
+                <li>Please review your answers once before submitting, if you have reviewed, then you can submit and check your score in scorecard.</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary but3">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid con3">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-interval="False">
+        <div class="carousel-inner">
+          <div class="carousel-item active aa">
+            <div class="container-fluid con4">
+              <p class="main">1 . What will be the output of the following C code? <br> </p>
+              <p class="sub">  #include <<x>assert.h>  <br>
+                              #include <<x>stdio.h><br>
+                               #include <<x>stdlib.h> <br>
+                              void -Assert (char *mesg) <br>
+                              { <br>
+                                 fputs (mesg, stderr); <br>
+                                 fputs (" -- assertion failed\n" , stderr); <br>
+                                 abort () ;  <br>
+                              } <br> </p>
+            </div>
+            <div class="container-fluid con5">
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">A</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">prints only assertion message</p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">B</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">program is just aborted</p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">C</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">prints assertion message and aborts</p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">D</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">no action takes place</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item bb">
+            <div class="container-fluid con4">
+              <p class="main">2 . What will be the output of the following C code? <br> </p>
+              <p class="sub">#include <<x>assert.h> <br>
+                              #include <<x>stdio.h>  <br>
+                              void main() <br>
+                              {  <br>
+                                 int n=11; <br>
+                                 char str[50]="program"; <br>
+                                 assert(n >= 10); <br>
+                                 printf(" output: %d\n", n); <br>
+                                 assert(str != NULL); <br>
+                                 printf("output: %s\n", str); <br>
+                              } <br>  </p>
+            </div>
+            <div class="container-fluid con5">
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">A</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> output: 11 </p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">B</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">  error message</p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">C</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">  output: 11 and
+                                    output: program</p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">D</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">output: program</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item cc">
+            <div class="container-fluid con4">
+              <p class="main">3 . What will be the output of the following C code? <br> </p>
+              <p class="sub">#include<<x>stdio.h> <br>
+                                #include<<x>stdlib.h> <br>
+                                #include<<x>time.h> <br>
+                                typedef struct tm tm; <br>
+                                int main() <br>
+                                { <br>
+                                    time_t ct; <br>
+                                    time(&ct); <br>
+                                    tm *mt=localtime(&ct); <br>
+                                    printf("%d\n",mt-> tm_year); <br>
+                                }<br> </p>
+            </div>
+            <div class="container-fluid con5">
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">A</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">17</p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">B</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">2017</p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">C</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">error</p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">D</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">117</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item dd">
+            <div class="container-fluid con4">
+              <p class="main">4 . What will be the output of the following C code? <br> </p>
+              <p class="sub">#include<<x>stdio.h> <br>
+                              #include<<x>stdlib.h> <br>
+                              #include<<x>time>.h> <br>
+                              int main() <br>
+                              { <br>
+                                  time_t ct; <br>
+                                  time(&ct); <br>
+                                  struct tm *mt=localtime(&ct); <br>
+                                  printf("%d\n",mt-> tm_date); <br>
+                              }  <br> </p>
+            </div>
+            <div class="container-fluid con5">
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">A</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">22</p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">B</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">6</p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">C</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">22/6 </p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">D</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> error </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ee">
+            <div class="container-fluid con4">
+              <p class="main">5 . What will be the output of the following C code? <br> </p>
+              <p class="sub">#include<<x>stdio.h><br>
+                              #include<<x>stdlib.h> <br>
+                              main() <br>
+                              { <br>
+                                  int *p; <br>
+                                  p=(int*)calloc(3*sizeof(int)); <br>
+                                  printf("Enter first number\n"); <br>
+                                  scanf("%d",p); <br>
+                                  printf("Enter second number\n"); <br>
+                                  scanf("%d",p+2); <br>
+                                  printf("%d%d",*p,*(p+2)); <br>
+                                  free(p); <br>
+                              } <br> </p>
+            </div>
+            <div class="container-fluid con5">
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">A</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">56</p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">B</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">Address of the locations where the two numbers are stored</p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">C</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">57</p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">D</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">Error</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ff">
+            <div class="container-fluid con4">
+              <p class="main">6 . What will be the output of the following C code? <br> </p>
+              <p class="sub">#include<<x>stdio.h> <br>
+                              #include<<x>stdlib.h> <br>
+                              main() <br>
+                              { <br>
+                                  int *a; <br>
+                                  a=(int*)malloc(sizeof(int)); <br>
+                                  *a=100; <br>
+                                  printf("*a%d",*a); <br>
+                                  free(a); <br>
+                                  a=(int*)malloc(sizeof(int)); <br>
+                                  *a=200; <br>
+                                  printf("a%p",a); <br>
+                                  *a=200; <br>
+                                  printf("a%d" ,*a); <br>
+                              }<br> </p>
+            </div>
+            <div class="container-fluid con5">
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">A</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> Error </p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">B</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">Memory leak</p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">C</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">Dangling pointer arises</p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">D</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">200 is printed as output</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item gg">
+            <div class="container-fluid con4">
+              <p class="main">7 . What will be the output of the following C code? <br> </p>
+              <p class="sub">#include<<x>stdio.h> <br>
+                              #include<<x>stdlib.h> <br>
+                              #include<<x>string.h> <br>
+                              int main() <br>
+                              { <br>
+                                  char *p; <br>
+                                  *p = (char)calloc(10); <br>
+                                  strcpy(p, "HELLO"); <br>
+                                  printf("%s", p); <br>
+                                  free(p); <br>
+                                  return 0; <br>
+                              } <br> </p>
+            </div>
+            <div class="container-fluid con5">
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">A</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">No error  </p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">B</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">Error in the statement: strcpy(p,”HELLO”);</p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">C</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">Error in the statement: *p=(char)calloc(10);</p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">D</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">Error in the statement: free(p);</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item hh">
+            <div class="container-fluid con4">
+              <p class="main">8 . What will be the output of the following C code? <br> </p>
+              <p class="sub">#include <<x>stdio.h> <br>
+                                  void inline func1(float b) <br>
+                                  { <br>
+                                      printf ("%lf\n",b*2); <br>
+                                  } <br>
+                                  int main() <br>
+                                  { <br>
+                                       inline func1(2.2); <br>
+                                       return 0; <br>
+                                  } <br> </p>
+            </div>
+            <div class="container-fluid con5">
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">A</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> No error</p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">B</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> Error in statement: void inline func1(float b)</p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">C</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> Error in statement: printf(“%lf\n”,b*2);</p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">D</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">Error in statement: inline func1(2.2);</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ii">
+            <div class="container-fluid con4">
+              <p class="main">9 . Which of the following is an external variable in the following C code? <br> </p>
+              <p class="sub">#include <<x>stdio.h> <br>
+                              int main() <br>
+                              { <br>
+                                 unsigned int i = 1; <br>
+                                 char *a = (char*)&i; <br>
+                                 if (*a) <br>
+                                     printf("Little endian"); <br>
+                                 else <br>
+                                     printf("Big endian"); <br>
+                                 getchar(); <br>
+                                 return 0; <br>
+                              }<br> </p>
+            </div>
+            <div class="container-fluid con5">
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">A</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">-1</p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">B</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">0</p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">C</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">1</p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">D</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">2</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item jj">
+            <div class="container-fluid con4">
+              <p class="main">10. What will be the sequence of allocation and deletion of variables in the following C code? <br> </p>
+              <p class="sub">#include <<x>stdio.h> <br>
+                              void inline func1(char b[10]) <br>
+                              { <br>
+                                  printf ("%c\n",b[2]); <br>
+                              } <br>
+                              int main() <br>
+                              { <br>
+                                   func1("sanfoundry"); <br>
+                                   return 0; <br>
+                              } <br> </p>
+            </div>
+            <div class="container-fluid con5">
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">A</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">s</p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">B</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">n</p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">C</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">a</p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">D</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">error</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev ctr ctr1" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon ctrl-prev" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next ctr ctr2" href="#carouselExampleControls" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon ctrl-nxt" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../js/c3.js" charset="utf-8"></script>
+</body>
+
+</html>

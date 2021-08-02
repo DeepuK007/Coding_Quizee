@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="D:\Web Development\Coding Quizee\css\styles1.css">
+  <link rel="icon" href="../css/favicon.ico">
+
+  <title>Coding Quizee | Answers | C Intermediate</title>
+</head>
+
+<body>
+  <div class="container-fluid con1">
+    <div class="container-fluid co_an">
+      <h1 class="ac1">C - Intermediate</h1>
+      <a class="btn btn-primary but2" href="../indexans.html" role="button">Back</a>
+    </div>
+
+    <div class="container-fluid con_ans_exp">
+      <p class="main">1 . What will be the output of the following C code? <br> </p>
+      <p class="sub">  #include <<x>stdio.h> <br>
+                        int *f(); <br>
+                        int main() <br>
+                        { <br>
+                            int *p = f(); <br>
+                            printf("%d\n", *p); <br>
+                        } <br>
+                        int *f() <br>
+                        { <br>
+                            int j = 10; <br>
+                            return &j; <br>
+                        }<br>
+      </p>
+      <p class="sub1">a) 10 <br>
+                      b) Compile time error <br>
+                      c) Segmentation fault/runtime crash <br>
+                      d) Undefined behaviour <br> </p>
+            <p class="main">Answer: a <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: We are returning address of a local variable which should not be done. In this specific instance, we are able to see the value of 10, which may not be the case if we call other functions before calling printf() in main().
+        </div>
+      </div>
+      <br>
+
+      <p class="main">2 . What will be the output of the following C code? <br> </p>
+      <p class="sub">#include <<x>stdio.h> <br>
+                      void main() <br>
+                      { <br>
+                          int k = 5; <br>
+                          int *p = &k; <br>
+                          int **m  = &p; <br>
+                          printf("%d%d%d\n", k, *p, **p); <br>
+                      } <br>
+      </p>
+      <p class="sub1">a)  5 5 5 <br>
+                      b) 5 5 junk value <br>
+                      c) 5 junk junk <br>
+                      d) Compile time error <br>
+                       <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: Since there is no double pointer for p.
+        </div>
+      </div>
+
+      <p class="main">3 . What will be the output of the following C code? <br> </p>
+      <p class="sub">   #include <<x>stdio.h> <br>
+                          struct student <br>
+                          { <br>
+                              int no; <br>
+                              char name[20]; <br>
+                          }; <br>
+                          void main() <br>
+                          { <br>
+                              student s; <br>
+                              s.no = 8; <br>
+                              printf("hello"); <br>
+                          }<br>
+      </p>
+      <p class="sub1">a) Nothing <br>
+                      b) hello <br>
+                      c) Compile time error <br>
+                      d) Varies <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: All variables inside the constructer should be given values when the constructer is called
+        </div>
+      </div>
+      <p class="main">4 . What will be the output of the following C code? <br> </p>
+      <p class="sub">#include <<x>stdio.h> <br>
+                        struct <br>
+                        { <br>
+                            int k; <br>
+                            char c; <br>
+                        } p; <br>
+                        int p = 10; <br>
+                        int main() <br>
+                        { <br>
+                            p.k = 10; <br>
+                            printf("%d %d\n", p.k, p); <br>
+                        } <br>
+      </p>
+      <p class="sub1">a) Compile time error <br>
+                      b) 10 10 <br>
+                      c) Depends on the standard <br>
+                      d) Depends on the compiler  <br> </p>
+            <p class="main">Answer: a <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: We can't assain direct value to structure
+        </div>
+      </div>
+
+      <p class="main">5 . What will be the output of the following C code? <br> </p>
+      <p class="sub">#include <<x>stdio.h> <br>
+                      int main(int argc, char **argv) <br>
+                      { <br>
+                          char *s = "myworld"; <br>
+                          int i = 3; <br>
+                          printf("%10.*s", i, s); <br>
+                      }<br>
+      </p>
+      <p class="sub1">a) myw(note:7 spaces before myw) <br>
+                      b) myworld(note:2 spaces before myworld) <br>
+                      c) myworld (note:2 spaces after myworld) <br>
+                      d) myw(note:6 spaces after myworld) <br> </p>
+            <p class="main">Answer: a <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: In the format represented by “%10.*s”, the width of the string will be 10 spaces which is aligned to the right, by default. Since we have asterisk (*) after the precision dot (.), the value of precision will be the value stored in the variable i. The value of i is 3, so this signifies max length of the string as 3 characters. So, the final formatted output will be a 10 character output with 3 characters “myw” printed with right alignment and the 1st 7 characters will be simply space characters.
+        </div>
+      </div>
+
+      <p class="main">6 . What will be the output of the following C code? <br> </p>
+      <p class="sub">#include <<x>stdio.h> <br>
+                      #include <<x>ctype.h> <br>
+                      int main() <br>
+                      { <br>
+                          int i = 0; <br>
+                          if (isspace(i)) <br>
+                              printf("space\n"); <br>
+                          else <br>
+                              printf("not space\n"); <br>
+                              return 0; <br>
+                      }<br>
+      </p>
+      <p class="sub1">a) Compile time error <br>
+                      b) space <br>
+                      c) not space <br>
+                      d) None of the mentioned<br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: The value of variable i is 0 which is the NULL character in ASCII. Hence, the output will be printed as “not space”.
+        </div>
+      </div>
+
+      <p class="main">7 . What will be the output of the following C code? <br> </p>
+      <p class="sub">#include <<x>stdio.h> <br>
+                      int main <br>
+                      { <br>
+                     const char pla[] = "string1"; <br>
+                     const char src[] = "string2";
+                     printf("Before memmove place= %s, src = %s\n", pla, src); <br>
+                     memmove(pla, src, 7); <br>
+                     printf("After memmove place = %s, src = %s\n", pla, src);<br>
+                     return 0 <br>
+                   } <br>
+      </p>
+      <p class="sub1">a) Before memmove place= string1, src = string2 After memmove place = string2, src = string2 <br>
+                      b) Before memmove place = string2, src = string2 After memmove place= string1, src = string2 <br>
+                      c) Before memmove place = string2, src = string1 After memmove place= string2, src =string2 <br>
+                      d) Before memmove place= string1, src = string2 After memmove place=string1, src = string1 <br> </p>
+            <p class="main">Answer: a <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: Explanation: In the C library function void *memmove(void *str1, const void *str2, size_t n) copies n characters from str2 to str1.
+        </div>
+      </div>
+
+      <p class="main">8 . What will be the output of the following C code? <br> </p>
+      <p class="sub">#include <<x>stdio.h> <br>
+                      int main() <br>
+                      { <br>
+                        const char str1[]="ABCDEF1234567"; <br>
+                        const char str2[] = "269"; <br>
+                        len = strcspn(str1, str2); <br>
+                        printf("First matching character is at %d\n", len + 1);<br>
+                        return 0 <br>
+                      } <br>
+      </p>
+      <p class="sub1">a) First matching character is at 8 <br>
+                      b) First matching character is at 7 <br>
+                      c) First matching character is at 9 <br>
+                      d) First matching character is at 12 <br> </p>
+            <p class="main">Answer: a <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: size_t strcspn(const char *str1, const char *str2) is used to calculate the length of the initial segment of str1, which consists entirely of characters not in str2.
+        </div>
+      </div>
+
+      <p class="main">9 . Which of the following is an external variable in the following C code? <br> </p>
+      <p class="sub">#include <<x>stdio.h> <br>
+                      int main <br>
+                      { <br>
+                        const char str1[] = "abcdef"; <br>
+                        const char str2[] = "fgha"; <br>
+                        char *mat; <br>
+                        mat= strpbrk(str1, str2); <br>
+                        if(mat) <br>
+                        printf("First matching character: %c\n", *mat); <br>
+                        else <br>
+                        printf("Character not found"); <br>
+                        return 0 <br>
+                        }<br>
+      </p>
+      <p class="sub1">a) g <br>
+                      b) a <br>
+                      c) h <br>
+                      d) f <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          The strpbrk() function is used to locate the first occurrence in the string str1 of any character from the string str2.
+        </div>
+      </div>
+
+      <p class="main">10 . What will be the output of the following C code? <br> </p>
+      <p class="sub">char * strrchr(const char *s, int c ) <br>
+                      char ch = c; <br>
+                      char *sc; <br>
+                      for(sc = NULL; ; ++s) <br>
+                      if(*s == ch) <br>
+                      SC = 9; <br>
+                      i f (*s =='\O' ) <br>
+                      return (( char *) s);<br>
+      </p>
+      <p class="sub1">a) find last occurrence of c in char s[ ]. <br>
+                      b) find first occurrence of c in char s[ ]. <br>
+                      c) find the current location of c in char s[ ]. <br>
+                      d) There is error in the given code  <br> </p>
+            <p class="main">Answer: a <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation:The strrchr() function locates the last occurrence of c (converted to a char) in the string pointed to by s. String contains null character as a terminating part of it.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>

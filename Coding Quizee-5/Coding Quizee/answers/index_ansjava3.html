@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="D:\Web Development\Coding Quizee\css\styles1.css">
+  <link rel="icon" href="../css/favicon.ico">
+
+  <title>Coding Quizee | Answers | Java Advanced</title>
+</head>
+
+<body>
+  <div class="container-fluid con1">
+    <div class="container-fluid co_an">
+      <h1 class="ac1">Java - Advanced Level</h1>
+      <a class="btn btn-primary but2" href="../indexans.html" role="button">Back</a>
+    </div>
+
+    <div class="container-fluid con_ans_exp">
+      <p class="main">1 .  What will be the output of the following Java statement? <br> </p>
+      <p class="sub">public class Shape <br>
+                        { <br>
+                          public int area() <br>
+                                { <br>
+                            return 1; <br>
+                          } <br>
+                        } <br>
+                        public class Square extends Shape <br>
+                        { <br>
+                          public int area() <br>
+                                { <br>
+                            return 2; <br>
+                          } <br>
+                        } <br>
+                        class Main() <br>
+                        { <br>
+                           public static void main(String[] args) <br>
+                           { <br>
+                          Shape shape = new Shape(); <br>
+                          Square square = new Square(); <br>
+                          shape = square; <br>
+                          System.out.println(shape.area()); <br>
+                            } <br>
+                        } <br> </p>
+      <p class="sub1">a) Compilation failure <br>
+                      b) Runtime failure <br>
+                      c) 1 <br>
+                      d) 2  <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: Child object can be assigned to parent variable without change in behaviour.
+        </div>
+      </div>
+        <br>
+
+      <p class="main">2 . What will be the output of the following Java program? <br> </p>
+      <p class="sub">public class Shape <br>
+                        { <br>
+                        	public int area() <br>
+                                { <br>
+                        		return 1; <br>
+                        	} <br>
+                        } <br>
+                        public class Square extends Shape <br>
+                        { <br>
+                        	public int area() <br>
+                                { <br>
+                        		return 2; <br>
+                        	} <br>
+                        } <br>
+                        class Main() <br>
+                        { <br>
+                           public static void main(String[] args) <br>
+                           { <br>
+                        	Shape shape = new Shape(); <br>
+                        	Square square = new Square(); <br>
+                        	square = shape; <br>
+                        	System.out.println(square.area()); <br>
+                           } <br>
+                        } <br> </p>
+      <p class="sub1">a) Compilation failure <br>
+                      b) 3 <br>
+                      c) 1 <br>
+                      d) 2 <br> </p>
+            <p class="main">Answer: a <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+      Explanation: Parent object cannot be assigned to child class.
+        </div>
+      </div>
+      <br>
+
+      <p class="main"> 3 . What one of the following is best practice to handle Null Pointer exception? <br> </p>
+      <p class="sub">i) int noOfStudents = line.listStudents().count; <br>
+                    ii) int noOfStudents = getCountOfStudents(line); <br>
+                                <br>
+                        public int getCountOfStudents(List line) <br>
+                        { <br>
+                    	if(line != null) <br>
+                            { <br>
+                    		if(line.listOfStudents() != null) <br>
+                                    { <br>
+                    			return line.listOfStudents().size(); <br>
+                    		} <br>
+                    	} <br>
+                    	throw new NullPointerException("List is empty"); <br>
+                        }<br> </p>
+      <p class="sub1">a) Option (i) <br>
+                      b) Option (ii) <br>
+                      c) Compilation Error <br>
+                      d) Option (ii) gives incorrect result <br> </p>
+            <p class="main">Answer: b <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+               Explanation:  Null check must be done while dealing with nested structures to avoid null pointer exceptions.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">4 .  What will be the output of the following Java code? <br> </p>
+      <p class="sub">import java.lang.reflect.*; <br>
+                      class Additional_packages <br>
+                      {	  <br>
+                      public static void main(String args[]) <br>
+                      {	  <br>
+                      try <br>
+                      {	  <br>
+                      Class c = Class.forName("java.awt.Dimension"); <br>
+                       Field fields[] = c.getFields();		<br>
+                       for (int i = 0; i < fields.length; i++) <br>
+                       System.out.println(fields[i]);	 <br>
+                       }	 <br>
+                      catch (Exception e) <br>
+                      { <br>
+                      System.out.print("Exception"); <br>
+                        } <br>
+                      }  <br>
+                      }<br> </p>
+      <p class="sub1">a) Program prints all the constructors of ‘java.awt.Dimension’ package <br>
+                      b) Program prints all the methods of ‘java.awt.Dimension’ package <br>
+                      c) Program prints all the data members of ‘java.awt.Dimension’ package <br>
+                      d) program prints all the methods and data member of ‘java.awt.Dimension’ package <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+      Explanation: Program prints all the data members which are present in the given package
+        </div>
+      </div>
+      <br>
+
+      <p class="main">5 .  What will be the output of the following Java program? <br> </p>
+      <p class="sub">class output <br>
+                      { <br>
+                      public static void main(String args[]) <br>
+                      {  <br>
+                      char c[]={'a','1','b',' ','A','0']; <br>
+                      for (int i = 0; i < 5; ++i)  <br>
+                      {	  <br>
+                      if(Character.isDigit(c[i])) <br>
+                      System.out.println(c[i]" is a digit"); <br>
+                      if(Character.isWhitespace(c[i])) <br>
+                      System.out.println(c[i]" is a Whitespace character"); <br>
+                      if(Character.isUpperCase(c[i]))  <br>
+                      System.out.println(c[i]" is an Upper case Letter"); <br>
+                      if(Character.isUpperCase(c[i])) <br>
+                       System.out.println(c[i]" is a lower case Letter"); <br>
+                      i = i + 3; <br>
+                          } <br>
+                        } <br>
+                      } <br> </p>
+      <p class="sub1">a) a is a lower case Letter is White space character <br>
+                      b) b is a lower case Letter is White space character <br>
+                      c) a is a lower case Letter A is a upper case Letter <br>
+                      d) a is a lower case Letter 0 is a digitView Answer  <br> </p>
+            <p class="main">Answer: a <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: Character.isDigit(c[i]),Character.isUpperCase(c[i]),Character.isWhitespace(c[i]) are the function of library java.lan  they are used to find weather the given character is of specified type or not. They return true or false i:e Boolean variable.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">6 .  What will be the output of the following Java code? <br> </p>
+      <p class="sub">import java.util.*; <br>
+                      public class genericstack <<x>E> <br>
+                      { <br>
+                      Stack <<x>E> stk = new Stack <<x>E>(); <br>
+                      public void push(E obj) <br>
+                      { <br>
+                      stk.push(obj); <br>
+                       }	<br>
+                      public E pop() <br>
+                       { <br>
+                      E obj = stk.pop(); <br>
+                       return obj;	<br>
+                         } <br>
+                       } <br>
+                      class Output <br>
+                      {  <br>
+                      public static void main(String args[]) <br>
+                      { <br>
+                      genericstack <<x>Integer> gs = new genericstack<<x>Integer>(); <br>
+                      gs.push(36); <br>
+                      System.out.println(gs.pop()); <br>
+                      } <br> </p>
+      <p class="sub1">a) H <br>
+                      b) Hello <br>
+                      c) Runtime Error <br>
+                      d) Compilation Error <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: generic stack object gs is defined to contain a string parameter but we are sending an integer parameter, which results in compilation error.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">7 .  What will be the output of the following Java program? <br> </p>
+      <p class="sub">import java.io.*; <br>
+                      class Chararrayinput <br>
+                      { <br>
+                          public static void main(String[] args) <br>
+                          { <br>
+                        String obj  = "abcdefgh"; <br>
+                               int length = obj.length(); <br>
+                              char c[] = new char[length]; <br>
+                              obj.getChars(0, length, c, 0); <br>
+                              CharArrayReader input1 = new CharArrayReader(c); <br>
+                              CharArrayReader input2 = new CharArrayReader(c, 1, 4); <br>
+                              int i; <br>
+                              int j; <br>
+                              try <br>
+                              { <br>
+                      while((i = input1.read()) == (j = input2.read())) <br>
+                                  { <br>
+                                      System.out.print((char)i); <br>
+                                  } <br>
+                              }  <br>
+                              catch (IOException e) <br>
+                              { <br>
+                                  e.printStackTrace(); <br>
+                        } <br>
+                    } <br>
+                    }  <br> </p>
+      <p class="sub1">a) abc <br>
+                      b) abcd <br>
+                      c) abcde <br>
+                      d) none of the mentioned  <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: No output is printed. CharArrayReader object input1 contains string “abcdefgh” whereas object input2 contains string “bcde”, when while((i=input1.read())==(j=input2.read())) is executed the starting character of each object is compared since they are unequal control comes out of loop and nothing is printed on the screen.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">8 .  What will be the output of the following Java code? <br> </p>
+      <p class="sub">class newthread extends Thread <br>
+                            { <br>
+                        	Thread t; <br>
+                        	String name; <br>
+                        	newthread(String threadname) <br>
+                                { <br>
+                        	    name = threadname; <br>
+                        	    t = new Thread(this,name); <br>
+                        	    t.start(); <br>
+                        	} <br>
+                        	public void run() <br>
+                                { <br>
+                                } <br>
+                                   <br>
+                            } <br>
+                            class multithreaded_programing <br>
+                            { <br>
+                                public static void main(String args[]) <br>
+                                { <br>
+                        	    newthread obj1 = 	 new newthread("one"); <br>
+                        	    newthread obj2 =	 new newthread("two"); <br>
+                                    try <br>
+                                    { <br>
+                                        obj1.t.wait();	<br>
+                                        System.out.print(obj1.t.isAlive()); <br>
+                                    } <br>
+                                    catch(Exception e) <br>
+                                    { <br>
+                        	    System.out.print("Main thread interrupted"); <br>
+                            } <br>
+                          } <br>
+                            }<br> </p>
+      <p class="sub1">a) true <br>
+                      b) false <br>
+                      c) Main thread interrupted <br>
+                      d) None of the mentioned  <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: obj1.t.wait() causes main thread to go out of processing in sleep state hence causes exception and “Main thread interrupted” is printed.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">9 .  What will be the output of the following Java statement? <br> </p>
+      <p class="sub">class Myexception extends Exception <br>
+                          { <br>
+                      	int detail; <br>
+                              Myexception(int a) <br>
+                              { <br>
+                                  detail = a; <br>
+                      	} <br>
+                      	public String toString() <br>
+                              { <br>
+                      	    return "detail"; <br>
+                      	} <br>
+                      } <br>
+                          class Output <br>
+                          { <br>
+                              static void compute (int a) throws Myexception <br>
+                              { <br>
+                      	     throw new Myexception(a); <br>
+                      	} <br>
+                      	public static void main(String args[]) <br>
+                              { <br>
+                                  try <br>
+                                  { <br>
+                                      compute(3); <br>
+                                  } <br>
+                                 catch(Myexception e) <br>
+                                 { <br>
+                                     System.out.print("Exception"); <br>
+                                 }  <br>
+                              } <br>
+                          } <br> </p>
+      <p class="sub1">a) 3 <br>
+                      b) Exception <br>
+                      c) Runtime Error <br>
+                      d) Compilation Error  <br> </p>
+            <p class="main">Answer: b <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: Myexception is self defined exception.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">10 .  What will be the output of the following Java program? <br> </p>
+      <p class="sub">import java.util.*; <br>
+                        class Collection_Algos <br>
+                        { <br>
+                            public static void main(String args[]) <br>
+                            { <br>
+                                LinkedList list = new LinkedList(); <br>
+                                list.add(new Integer(2)); <br>
+                                list.add(new Integer(8)); <br>
+                                list.add(new Integer(5)); <br>
+                                list.add(new Integer(1)); <br>
+                                Iterator i = list.iterator(); <br>
+                                Collections.reverse(list); <br>
+                    	    Collections.sort(list); <br>
+                                while(i.hasNext()) <br>
+                    	        System.out.print(i.next() + " "); <br>
+                            } <br>
+                        } <br> </p>
+      <p class="sub1">a) 2 8 5 1 <br>
+                      b) 1 5 8 2 <br>
+                      c) 1 2 5 8 <br>
+                      d) 2 1 8 5  <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: Collections.sort(list) sorts the given list, the list was 2->8->5->1 after sorting it became 1->2->5->8.
+        </div>
+      </div>
+      <br>
+
+    </div>
+
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>

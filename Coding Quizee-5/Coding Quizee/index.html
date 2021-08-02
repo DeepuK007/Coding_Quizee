@@ -1,0 +1,778 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="css/favicon.ico">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+  <title>Coding Quizee | Home</title>
+</head>
+
+<body class="hom">
+  <div class="container-fluid con">
+    <nav class="navbar navbar-dark navbar-expand-lg navb">
+      <div class="container-fluid">
+        <h1 class="head1">Coding Quizee</h1>
+        <button class="navbar-toggler tog" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item home">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="index_abt.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Quiz
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#c">C</a></li>
+                <li><a class="dropdown-item" href="#ch">C#</a></li>
+                <li><a class="dropdown-item" href="#cp">C++</a></li>
+                <li><a class="dropdown-item" href="#j">Java</a></li>
+                <li><a class="dropdown-item" href="#p">Python</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Answers
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="indexans.html#c">C</a></li>
+                <li><a class="dropdown-item" href="indexans.html#ch">C#</a></li>
+                <li><a class="dropdown-item" href="indexans.html#cp">C++</a></li>
+                <li><a class="dropdown-item" href="indexans.html#j">Java</a></li>
+                <li><a class="dropdown-item" href="indexans.html#p">Python</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Scorecard
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="index_score1.html">Your scores</a></li>
+                <li><a class="dropdown-item" href="index_score2.html">Leaderboard</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="index_con.html">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="indexl.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="indexsu.html" tabindex="-1" aria-disabled="true">Sign up</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid con1">
+
+      <h2 class="start">It's a programming quiz.</h2>
+      <p class="start end">Here, you'll find the most comprehensive questions related to <br> programming languages.</p>
+
+    </div>
+  </div>
+
+  <div class="container-fluid con2" id="c">
+
+    <div class="row al">
+      <div class="col-sm-3 im">
+        <p class="imp_head">C</p>
+        <p class="imp">C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system. By design, C provides constructs that map efficiently to
+          typical machine instructions.</p>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <img src="css/C1.png" class="card-img-top" alt="...">
+            <h5 class="card-title">Basic Level</h5>
+            <p class="card-text">This quiz consists of questions related to topics such as data types, operators, expressions, control flow, functions and structures.</p>
+            <button type="button" class="btn btn-primary btn3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Start Quiz
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title m_title" id="staticBackdropLabel">C Basic</h5>
+                    <button type="button" class="btn-close but3" data-bs-dismiss="modal" aria-label="Close">X</button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="m_head">Instructions</p>
+                    <ul type="circle m_point">
+                      <li>It is a basic level quiz.</li>
+                      <li>It consists of ten programming related questions.</li>
+                      <li>1 point will be awarded for every correct answer, 0.25 point will be deducted for every incorrect answer and if unattempted no point will be deducted.</li>
+                      <li>Be careful while selecting options, only once you can select.</li>
+                      <li>There's no time limit.</li>
+                      <li>Now, you can start quiz.</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn2" data-bs-dismiss="modal">Close</button>
+                    <a class="btn btn-primary btn1" href="questions/indexc1.html" role="button">Start Quiz</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <img src="css/C2.png" class="card-img-top" alt="...">
+            <h5 class="card-title">Intermediate Level</h5>
+            <p class="card-text">This quiz consists of questions related to topics such as pointers and arrays, input and output, structures and string operations.</p>
+            <button type="button" class="btn btn-primary btn3" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+              Start Quiz
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title m_title" id="staticBackdropLabel">C Intermediate</h5>
+                    <button type="button" class="btn-close but3" data-bs-dismiss="modal" aria-label="Close">X</button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="m_head">Instructions</p>
+                    <ul type="circle m_point">
+                      <li>It is an intermediate level quiz.</li>
+                      <li>It consists of ten programming related questions.</li>
+                      <li>1 point will be awarded for every correct answer, 0.25 point will be deducted for every incorrect answer and if unattempted no point will be deducted.</li>
+                      <li>Be careful while selecting options, only once you can select.</li>
+                      <li>There's no time limit.</li>
+                      <li>Now, you can start quiz.</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn2" data-bs-dismiss="modal">Close</button>
+                    <a class="btn btn-primary btn1" href="questions/indexc2.html" role="button">Start Quiz</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <img src="css/C3.png" class="card-img-top" alt="...">
+            <h5 class="card-title">Advanced Level</h5>
+            <p class="card-text">This quiz consists of questions related to topics such as c libraray, dynamic memory allocation and miscallaneous topics.</p>
+            <button type="button" class="btn btn-primary btn3" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+              Start Quiz
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title m_title" id="staticBackdropLabel">C Advanced</h5>
+                    <button type="button" class="btn-close but3" data-bs-dismiss="modal" aria-label="Close">X</button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="m_head">Instructions</p>
+                    <ul type="circle m_point">
+                      <li>It is an advanced level quiz.</li>
+                      <li>It consists of ten programming related questions.</li>
+                      <li>1 point will be awarded for every correct answer, 0.25 point will be deducted for every incorrect answer and if unattempted no point will be deducted.</li>
+                      <li>Be careful while selecting options, only once you can select.</li>
+                      <li>There's no time limit.</li>
+                      <li>Now, you can start quiz.</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn2" data-bs-dismiss="modal">Close</button>
+                    <a class="btn btn-primary btn1" href="questions/indexc3.html" role="button">Start Quiz</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid con2" id="ch">
+
+
+    <div class="row al">
+      <div class="col-sm-3 im">
+        <p class="imp_head">C#</p>
+        <p class="imp">C# is a general-purpose, multi-paradigm programming language encompassing static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented
+          programming disciplines.</p>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <img src="css/CS1.png" class="card-img-top" alt="...">
+            <h5 class="card-title">Basic Level</h5>
+            <p class="card-text">This quiz consists of questions related to topics such as data types, variables, operators, looping, classes, arrays and strings.</p>
+            <button type="button" class="btn btn-primary btn3" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+              Start Quiz
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title m_title" id="staticBackdropLabel">C# Basic</h5>
+                    <button type="button" class="btn-close but3" data-bs-dismiss="modal" aria-label="Close">X</button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="m_head">Instructions</p>
+                    <ul type="circle m_point">
+                      <li>It is a basic level quiz.</li>
+                      <li>It consists of ten programming related questions.</li>
+                      <li>1 point will be awarded for every correct answer, 0.25 point will be deducted for every incorrect answer and if unattempted no point will be deducted.</li>
+                      <li>Be careful while selecting options, only once you can select.</li>
+                      <li>There's no time limit.</li>
+                      <li>Now, you can start quiz.</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn2" data-bs-dismiss="modal">Close</button>
+                    <a class="btn btn-primary btn1" href="questions/indexch1.html" role="button">Start Quiz</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <img src="css/CS2.png" class="card-img-top" alt="...">
+            <h5 class="card-title">Intermediate Level</h5>
+            <p class="card-text">This quiz consists of questions related to topics such as object oriented concepts, indexers, exception handling, console I/O operation and stream classes.</p>
+            <button type="button" class="btn btn-primary btn3" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+              Start Quiz
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title m_title" id="staticBackdropLabel">C# Intermediate</h5>
+                    <button type="button" class="btn-close but3" data-bs-dismiss="modal" aria-label="Close">X</button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="m_head">Instructions</p>
+                    <ul type="circle m_point">
+                      <li>It is an intermediate level quiz.</li>
+                      <li>It consists of ten programming related questions.</li>
+                      <li>1 point will be awarded for every correct answer, 0.25 point will be deducted for every incorrect answer and if unattempted no point will be deducted.</li>
+                      <li>Be careful while selecting options, only once you can select.</li>
+                      <li>There's no time limit.</li>
+                      <li>Now, you can start quiz.</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn2" data-bs-dismiss="modal">Close</button>
+                    <a class="btn btn-primary btn1" href="questions/indexch2.html" role="button">Start Quiz</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <img src="css/CS3.png" class="card-img-top" alt="...">
+            <h5 class="card-title">Advanced Level</h5>
+            <p class="card-text">This quiz consists of questions related to topics such as delegates, generics, linq, reflections, multithreaded programming, preprocessors and networking.</p>
+            <button type="button" class="btn btn-primary btn3" data-bs-toggle="modal" data-bs-target="#staticBackdrop5">
+              Start Quiz
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title m_title" id="staticBackdropLabel">C# Advanced</h5>
+                    <button type="button" class="btn-close but3" data-bs-dismiss="modal" aria-label="Close">X</button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="m_head">Instructions</p>
+                    <ul type="circle m_point">
+                      <li>It is an advanced level quiz.</li>
+                      <li>It consists of ten programming related questions.</li>
+                      <li>1 point will be awarded for every correct answer, 0.25 point will be deducted for every incorrect answer and if unattempted no point will be deducted.</li>
+                      <li>Be careful while selecting options, only once you can select.</li>
+                      <li>There's no time limit.</li>
+                      <li>Now, you can start quiz.</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn2" data-bs-dismiss="modal">Close</button>
+                    <a class="btn btn-primary btn1" href="questions/indexch3.html" role="button">Start Quiz</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid con2" id="cp">
+
+
+    <div class="row al">
+      <div class="col-sm-3 im">
+        <p class="imp_head">C++</p>
+        <p class="imp">C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or "C with Classes". The language has expanded significantly over time, and modern C++ now has
+          object-oriented, generic, and functional features in addition to facilities for low-level memory manipulation.</p>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <img src="css/C+1.png" class="card-img-top" alt="...">
+            <h5 class="card-title">Basic Level</h5>
+            <p class="card-text">This quiz consists of questions related to topics such as basic concepts, types, pointers, arrays, structures, functions and namespaces.</p>
+            <button type="button" class="btn btn-primary btn3" data-bs-toggle="modal" data-bs-target="#staticBackdrop6">
+              Start Quiz
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title m_title" id="staticBackdropLabel">C++ Basic</h5>
+                    <button type="button" class="btn-close but3" data-bs-dismiss="modal" aria-label="Close">X</button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="m_head">Instructions</p>
+                    <ul type="circle m_point">
+                      <li>It is a basic level quiz.</li>
+                      <li>It consists of ten programming related questions.</li>
+                      <li>1 point will be awarded for every correct answer, 0.25 point will be deducted for every incorrect answer and if unattempted no point will be deducted.</li>
+                      <li>Be careful while selecting options, only once you can select.</li>
+                      <li>There's no time limit.</li>
+                      <li>Now, you can start quiz.</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn2" data-bs-dismiss="modal">Close</button>
+                    <a class="btn btn-primary btn1" href="questions/indexc++1.html" role="button">Start Quiz</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <img src="css/C+2.png" class="card-img-top" alt="...">
+            <h5 class="card-title">Intermediate Level</h5>
+            <p class="card-text">This quiz consists of questions related to topics such as classes, operator overloading, derived classes, exception handling and iterators .</p>
+            <button type="button" class="btn btn-primary btn3" data-bs-toggle="modal" data-bs-target="#staticBackdrop7">
+              Start Quiz
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title m_title" id="staticBackdropLabel">C++ Intermediate</h5>
+                    <button type="button" class="btn-close but3" data-bs-dismiss="modal" aria-label="Close">X</button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="m_head">Instructions</p>
+                    <ul type="circle m_point">
+                      <li>It is an intermediate level quiz.</li>
+                      <li>It consists of ten programming related questions.</li>
+                      <li>1 point will be awarded for every correct answer, 0.25 point will be deducted for every incorrect answer and if unattempted no point will be deducted.</li>
+                      <li>Be careful while selecting options, only once you can select.</li>
+                      <li>There's no time limit.</li>
+                      <li>Now, you can start quiz.</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn2" data-bs-dismiss="modal">Close</button>
+                    <a class="btn btn-primary btn1" href="questions/indexc++2.html" role="button">Start Quiz</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <img src="css/C+3.png" class="card-img-top" alt="...">
+            <h5 class="card-title">Advanced Level</h5>
+            <p class="card-text">This quiz consists of questions related to topics such as library, containers, streams, numerics and advanced conceps.</p>
+            <button type="button" class="btn btn-primary btn3" data-bs-toggle="modal" data-bs-target="#staticBackdrop8">
+              Start Quiz
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title m_title" id="staticBackdropLabel">C++ Advanced</h5>
+                    <button type="button" class="btn-close but3" data-bs-dismiss="modal" aria-label="Close">X</button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="m_head">Instructions</p>
+                    <ul type="circle m_point">
+                      <li>It is an advanced level quiz.</li>
+                      <li>It consists of ten programming related questions.</li>
+                      <li>1 point will be awarded for every correct answer, 0.25 point will be deducted for every incorrect answer and if unattempted no point will be deducted.</li>
+                      <li>Be careful while selecting options, only once you can select.</li>
+                      <li>There's no time limit.</li>
+                      <li>Now, you can start quiz.</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn2" data-bs-dismiss="modal">Close</button>
+                    <a class="btn btn-primary btn1" href="questions/indexc++3.html" role="button">Start Quiz</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid con2" id="j">
+
+
+    <div class="row al">
+      <div class="col-sm-3 im">
+        <p class="imp_head">Java</p>
+        <p class="imp">Java is a class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let application developers write
+          once, run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation.</p>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <img src="css/J1.png" class="card-img-top" alt="...">
+            <h5 class="card-title">Basic Level</h5>
+            <p class="card-text">This quiz consists of questions related to topics such as data types, variables, arrays, operators, control statements, classes and methods.</p>
+            <button type="button" class="btn btn-primary btn3" data-bs-toggle="modal" data-bs-target="#staticBackdrop9">
+              Start Quiz
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop9" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title m_title" id="staticBackdropLabel">Java Basic</h5>
+                    <button type="button" class="btn-close but3" data-bs-dismiss="modal" aria-label="Close">X</button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="m_head">Instructions</p>
+                    <ul type="circle m_point">
+                      <li>It is a basic level quiz.</li>
+                      <li>It consists of ten programming related questions.</li>
+                      <li>1 point will be awarded for every correct answer, 0.25 point will be deducted for every incorrect answer and if unattempted no point will be deducted.</li>
+                      <li>Be careful while selecting options, only once you can select.</li>
+                      <li>There's no time limit.</li>
+                      <li>Now, you can start quiz.</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn2" data-bs-dismiss="modal">Close</button>
+                    <a class="btn btn-primary btn1" href="questions/indexjava1.html" role="button">Start Quiz</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <img src="css/J2.png" class="card-img-top" alt="...">
+            <h5 class="card-title">Intermediate Level</h5>
+            <p class="card-text">This quiz consists of questions related to topics such as inheritance, exception handling, multithreading, interfaces, packages and generics.</p>
+            <button type="button" class="btn btn-primary btn3" data-bs-toggle="modal" data-bs-target="#staticBackdrop10">
+              Start Quiz
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop10" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title m_title" id="staticBackdropLabel">Java Intermediate</h5>
+                    <button type="button" class="btn-close but3" data-bs-dismiss="modal" aria-label="Close">X</button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="m_head">Instructions</p>
+                    <ul type="circle m_point">
+                      <li>It is an intermediate level quiz.</li>
+                      <li>It consists of ten programming related questions.</li>
+                      <li>1 point will be awarded for every correct answer, 0.25 point will be deducted for every incorrect answer and if unattempted no point will be deducted.</li>
+                      <li>Be careful while selecting options, only once you can select.</li>
+                      <li>There's no time limit.</li>
+                      <li>Now, you can start quiz.</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn2" data-bs-dismiss="modal">Close</button>
+                    <a class="btn btn-primary btn1" href="questions/indexjava2.html" role="button">Start Quiz</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <img src="css/J3.png" class="card-img-top" alt="...">
+            <h5 class="card-title">Advanced Level</h5>
+            <p class="card-text">This quiz consists of questions related to topics such as awt, swing, I/O, java server technologies, servlet, java beans and jdbc.</p>
+            <button type="button" class="btn btn-primary btn3" data-bs-toggle="modal" data-bs-target="#staticBackdrop11">
+              Start Quiz
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop11" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title m_title" id="staticBackdropLabel">Java Advanced</h5>
+                    <button type="button" class="btn-close but3" data-bs-dismiss="modal" aria-label="Close">X</button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="m_head">Instructions</p>
+                    <ul type="circle m_point">
+                      <li>It is an advanced level quiz.</li>
+                      <li>It consists of ten programming related questions.</li>
+                      <li>1 point will be awarded for every correct answer, 0.25 point will be deducted for every incorrect answer and if unattempted no point will be deducted.</li>
+                      <li>Be careful while selecting options, only once you can select.</li>
+                      <li>There's no time limit.</li>
+                      <li>Now, you can start quiz.</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn2" data-bs-dismiss="modal">Close</button>
+                    <a class="btn btn-primary btn1" href="questions/indexjava3.html" role="button">Start Quiz</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid con2" id="p">
+
+
+    <div class="row al">
+      <div class="col-sm-3 im">
+        <p class="imp_head">Python</p>
+        <p class="imp">Python is an interpreted high-level general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation. Its language constructs as well as its
+          object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.</p>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <img src="css/P1.png" class="card-img-top" alt="...">
+            <h5 class="card-title">Basic Level</h5>
+            <p class="card-text">This quiz consists of questions related to topics such as data types, variables, operators, precedence, associativity, loops and strings.</p>
+            <button type="button" class="btn btn-primary btn3" data-bs-toggle="modal" data-bs-target="#staticBackdrop12">
+              Start Quiz
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop12" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title m_title" id="staticBackdropLabel">Python Basic</h5>
+                    <button type="button" class="btn-close but3" data-bs-dismiss="modal" aria-label="Close">X</button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="m_head">Instructions</p>
+                    <ul type="circle m_point">
+                      <li>It is a basic level quiz.</li>
+                      <li>It consists of ten programming related questions.</li>
+                      <li>1 point will be awarded for every correct answer, 0.25 point will be deducted for every incorrect answer and if unattempted no point will be deducted.</li>
+                      <li>Be careful while selecting options, only once you can select.</li>
+                      <li>There's no time limit.</li>
+                      <li>Now, you can start quiz.</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn2" data-bs-dismiss="modal">Close</button>
+                    <a class="btn btn-primary btn1" href="questions/indexpython1.html" role="button">Start Quiz</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <img src="css/P2.png" class="card-img-top" alt="...">
+            <h5 class="card-title">Intermediate Level</h5>
+            <p class="card-text">This quiz consists of questions related to topics such as lists, list comprehensions, tuples, sets, dictionary , inheritance, polmorphism, and exception
+              handling.</p>
+              <button type="button" class="btn btn-primary btn3" data-bs-toggle="modal" data-bs-target="#staticBackdrop13">
+                Start Quiz
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop13" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title m_title" id="staticBackdropLabel">Python Intermediate</h5>
+                      <button type="button" class="btn-close but3" data-bs-dismiss="modal" aria-label="Close">X</button>
+                    </div>
+                    <div class="modal-body">
+                      <p class="m_head">Instructions</p>
+                      <ul type="circle m_point">
+                        <li>It is an intermediate level quiz.</li>
+                        <li>It consists of ten programming related questions.</li>
+                        <li>1 point will be awarded for every correct answer, 0.25 point will be deducted for every incorrect answer and if unattempted no point will be deducted.</li>
+                        <li>Be careful while selecting options, only once you can select.</li>
+                        <li>There's no time limit.</li>
+                        <li>Now, you can start quiz.</li>
+                      </ul>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary btn2" data-bs-dismiss="modal">Close</button>
+                      <a class="btn btn-primary btn1" href="questions/indexpython2.html" role="button">Start Quiz</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <img src="css/P3.png" class="card-img-top" alt="...">
+            <h5 class="card-title">Advanced Level</h5>
+            <p class="card-text">This quiz consists of questions related to topics such as shallow copy vs deep copy, recursion, mapping, modules, regular expressions and files.</p>
+            <button type="button" class="btn btn-primary btn3" data-bs-toggle="modal" data-bs-target="#staticBackdrop14">
+              Start Quiz
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop14" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title m_title" id="staticBackdropLabel">Python Advanced</h5>
+                    <button type="button" class="btn-close but3" data-bs-dismiss="modal" aria-label="Close">X</button>
+                  </div>
+                  <div class="modal-body">
+                    <p class="m_head">Instructions</p>
+                    <ul type="circle m_point">
+                      <li>It is an advanced level quiz.</li>
+                      <li>It consists of ten programming related questions.</li>
+                      <li>1 point will be awarded for every correct answer, 0.25 point will be deducted for every incorrect answer and if unattempted no point will be deducted.</li>
+                      <li>Be careful while selecting options, only once you can select.</li>
+                      <li>There's no time limit.</li>
+                      <li>Now, you can start quiz.</li>
+                    </ul>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn2" data-bs-dismiss="modal">Close</button>
+                    <a class="btn btn-primary btn1" href="questions/indexpython3.html" role="button">Start Quiz</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/index.js" charset="utf-8"></script>
+
+</body>
+<footer>
+  <div class="row al fot">
+    <div class="col-sm-2">
+
+    </div>
+    <div class="col-sm-4 fot1">
+      <div class="fot11">
+        <h1>Coding Quizee</h1>
+        <p class="ft">It's a programming quiz.</p>
+      </div>
+
+    </div>
+    <div class="col-sm-3 fot2">
+      <h3>CONTENTS</h3>
+      <a href="index.html" class="ft1">Home</a> <br>
+      <a href="index_abt.html" class="ft1">About</a> <br>
+      <a href="index.html#c" class="ft1">Quiz</a> <br>
+      <a href="indexans.html#c" class="ft1">Answers</a> <br>
+      <a href="index_con.html" class="ft1">Contact us</a> <br>
+
+    </div>
+    <div class="col-sm-3 fot3">
+      <h3>FOLLOW US</h3>
+      <a href=""><i class="fab fa-facebook-f ic"></i></a>
+      <a href="#"><i class="fab fa-twitter ic"></i></a>
+      <a href="#"><i class="fab fa-instagram ic"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in ic"></i></a>
+    </div>
+  </div>
+  <div class="fot4">
+    <i class="far fa-copyright cp"></i>
+    <p class="cpt">Copyright.All rights reserved.</p>
+  </div>
+</footer>
+
+</html>

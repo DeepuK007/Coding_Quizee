@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="D:\Web Development\Coding Quizee\css\styles1.css">
+  <link rel="icon" href="../css/favicon.ico">
+
+  <title>Coding Quizee | Answers | C++ Basic</title>
+</head>
+
+<body>
+  <div class="container-fluid con1">
+    <div class="container-fluid co_an">
+      <h1 class="ac1">C++ - Basic Level</h1>
+      <a class="btn btn-primary but2" href="../indexans.html" role="button">Back</a>
+    </div>
+
+    <div class="container-fluid con_ans_exp">
+      <p class="main">1 .  What will be the output of the following C++ code? <br> </p>
+      <p class="sub"> #include <<x>iostream> <br>
+                      using namespace std; <br>
+                      class Test <br>
+                      { <br>
+                          static int x; <br>
+                        public: <br>
+                          Test() { x++; } <br>
+                          static int getX() {return x;} <br>
+                      }; <br>
+                      int Test::x = 0; <br>
+                      int main() <br>
+                      {        <br>
+                          cout << Test::getX() << " "; <br>
+                          Test t[5]; <br>
+                          cout << Test::getX(); <br>
+                      }<br> </p>
+      <p class="sub1">a) 0 0 <br>
+                      b) 5 0 <br>
+                      c) 0 5 <br>
+                      d) 5 5<br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+      Explanation: Static function can be called without using objects therefore the first call is fine. Next when we are creating 5 objects of the class then value of x is updated each time and as static variables are global to class therefore each updation of x is reflected back to each object hence value of x is 5.
+        </div>
+      </div>
+        <br>
+
+      <p class="main">2 . What will be the output of the following C++ code? <br> </p>
+      <p class="sub"> #include <<x>iostream> <br>
+                      using namespace std; <br>
+                      class Test <br>
+                      { <br>
+                         private: <br>
+                           static int count; <br>
+                         public: <br>
+                           Test& fun(); <br>
+                      }; <br>
+                      int Test::count = 0; <br>
+                      Test& Test::fun() <br>
+                      { <br>
+                          Test::count++; <br>
+                          cout << Test::count << " "; <br>
+                          return *this; <br>
+                      } <br>
+                      int main() <br>
+                      { <br>
+                          Test t; <br>
+                          t.fun().fun().fun().fun(); <br>
+                          return 0; <br>
+                      } <br>
+      <p class="sub1">a) 4 4 4 4 <br>
+                      b) 1 2 3 4 <br>
+                      c) 1 1 1 1 <br>
+                      d) 0 1 2 3 <br> </p>
+            <p class="main">Answer: b <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+      Explanation: Here we are returning the reference of object by the function call fun() therefore this type of call is allowed. Also as count is static member of the class therefore updation is reflected to the whole class and to every object of the class. Therefore the four function calls to fun() function updates the value of count and prints.
+        </div>
+      </div>
+      <br>
+
+      <p class="main"> 3 . What will be the output of the following C++ code? <br> </p>
+      <p class="sub">#include <<x>iostream> <br>
+                      using namespace std; <br>
+                      class Point <br>
+                      { <br>
+                          int x, y; <br>
+                        public: <br>
+                         Point(int i = 0, int j =0) <br>
+                         { x = i; y = j;  } <br>
+                         int getX() const { return x; } <br>
+                         int getY() {return y;} <br>
+                      }; <br>
+                        <br>
+                      int main() <br>
+                      { <br>
+                          const Point t; <br>
+                          cout << t.getX() << " "; <br>
+                          cout << t.gety(); <br>
+                          return 0; <br>
+                      }<br> </p>
+      <p class="sub1">a) 0 0 <br>
+                      b) Garbage values <br>
+                      c) Compile error <br>
+                      d) Segmentation fault <br> </p>
+
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+            Explanation: C++ does not allows a constant object to access any non constant member functions and as getY() is a non constant function and t is a constant object therefore the program gives the error.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">4 .  What will be the output of the following C++ code? <br> </p>
+      <p class="sub"> #include <<x>iostream> <br>
+                      using namespace std; <br>
+                      int f(int p, int q) <br>
+                      { <br>
+                          if (p > q) <br>
+                              return p; <br>
+                          else <br>
+                              return q; <br>
+                      } <br>
+                      main() <br>
+                      { <br>
+                          int a = 5, b = 10; <br>
+                          int k; <br>
+                          bool x = true; <br>
+                          bool y = f(a, b); <br>
+                          k =((a * b) + (x + y)); <br>
+                          cout << k; <br>
+                      }<br> </p>
+      <p class="sub1">a) 55 <br>
+                      b) 62 <br>
+                      c) 52 <br>
+                      d) 75<br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+              Explanation: In this question, value of x = true and value of y will be also true as f(a,b) will return a non-zero value. Now when adding these values with integers, the implicit type conversion takes place hence converting both x and y to 1(integer equivalent of bool true value). So expression (a*b) + (x+y) is evaluated to 52.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">5 .  What will be the output of the following C++ program? <br> </p>
+      <p class="sub"> #include <<x>iostream> <br>
+                      using namespace std; <br>
+                      int main() <br>
+                      { <br>
+                          float num1 = 1.1; <br>
+                          double num2 = 1.1; <br>
+                          if (num1 == num2)  <br>
+                             cout << "stanford"; <br>
+                          else <br>
+                             cout << "harvard"; <br>
+                          return 0; <br>
+                      } <br> </p>
+      <p class="sub1">a) harvard <br>
+                      b) stanford <br>
+                      c) compile time error <br>
+                      d) runtime error <br> </p>
+            <p class="main">Answer: a <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+    Explanation: Float store floating point numbers with 8 place accuracy and requires 4 bytes of Memory. Double has 16 place accuracy having the size of 8 bytes.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">6 .  What will be the output of the following C++ code? <br> </p>
+      <p class="sub">  #include <<x>stdio.h> <br>
+                        #include<<x>iostream> <br>
+                        using namespace std; <br>
+                        int main () <br>
+                        { <br>
+                            int array[] = {0, 2, 4, 6, 7, 5, 3}; <br>
+                            int n, result = 0; <br>
+                            for (n = 0; n < 8; n++) <br>
+                            { <br>
+                                result += array[n]; <br>
+                            } <br>
+                            cout << result; <br>
+                            return 0; <br>
+                        }<br> </p>
+      <p class="sub1">a) 25 <br>
+                      b) 26 <br>
+                      c) 27 <br>
+                      d) 21 <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+      Explanation: We are adding all the elements in the array and printing it. Total elements in the array is 7, but our for loop will go beyond 7 and add a garbage value.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">7 .  What will be the output of the following C++ program? <br> </p>
+      <p class="sub">  #include <<x>iostream> <br>
+                        using namespace std; <br>
+                        int main () <br>
+                        { <br>
+                            int x, y; <br>
+                            x = 5; <br>
+                            y = ++x * ++x; <br>
+                            cout << x << y; <br>
+                            x = 5; <br>
+                            y = x++ * ++x; <br>
+                            cout << x << y; <br>
+                            return 0; <br>
+                        } <br> </p>
+      <p class="sub1">a) 749735 <br>
+                      b) 736749 <br>
+                      c) 367497 <br>
+                      d) 367597 <br> </p>
+            <p class="main">Answer: a <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">Explanation: Because of the precedence the pre-increment and post increment operator, we got the output as 749736.  Explanation: The WITH statement when used with open file guarantees that the file object is closed when the with block exits.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">8 .  What will be the output of the following C++ code? <br> </p>
+      <p class="sub">#include <<x>iostream> <br>
+                      using namespace std; <br>
+                      void square (int *x, int *y) <br>
+                      { <br>
+                      	*x = (*x) * --(*y); <br>
+                      } <br>
+                      int main ( ) <br>
+                      { <br>
+                      	int number = 30; <br>
+                      	square(&number, &number); <br>
+                      	cout << number; <br>
+                      	return 0; <br>
+                      } <br> </p>
+      <p class="sub1">a) 870 <br>
+                      b) 30 <br>
+                      c) Error <br>
+                      d) Segmentation fault <br> </p>
+            <p class="main">Answer: a <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+      Explanation: As we are passing value by reference therefore the change in the value is reflected back to the passed variable number hence value of number is changed to 870.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">9 .  What will be the output of the following C++ code? <br> </p>
+      <p class="sub">  #include <<x>iostream> <br>
+                        using namespace std; <br>
+                        int main() <br>
+                        { <br>
+                            int age = 0; <br>
+                            try  <br>
+                            { <br>
+                                if (age < 0) <br>
+                                { <br>
+                                    throw "Positive Number Required"; <br>
+                                } <br>
+                                cout << age; <br>
+                            } <br>
+                            catch(const char *Message) <br>
+                            { <br>
+                                cout << "Error: " << Message; <br>
+                            } <br>
+                            return 0; <br>
+                        } <br> </p>
+      <p class="sub1">a) 0 <br>
+                      b) error:Positive Number Required <br>
+                      c) compile time error <br>
+                      d) runtime error <br> </p>
+            <p class="main">Answer: a <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: As the zero marks the beginning of the positive number, it is printed as output.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">10 .  What will be the output of the following C++ program? <br> </p>
+      <p class="sub"> #include <<x>iostream> <br>
+                      using namespace std; <br>
+                      int add(int first, int second) <br>
+                      { <br>
+                          return first + second + 15; <br>
+                      } <br>
+                      int operation(int first, int second, int (*functocall)(int, int)) <br>
+                      { <br>
+                          return (*functocall)(first, second); <br>
+                      } <br>
+                      int main() <br>
+                      { <br>
+                          int  a; <br>
+                          int  (*plus)(int, int) = add; <br>
+                          a = operation(15, 10, plus); <br>
+                          cout << a; <br>
+                          return 0; <br>
+                      } <br> </p>
+      <p class="sub1">a) 25 <br>
+                      b) 35 <br>
+                      c) 40 <br>
+                      d) 45 <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: In this program, we are adding two numbers with 15, So we got the output as 40.
+        </div>
+      </div>
+      <br>
+
+    </div>
+
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>

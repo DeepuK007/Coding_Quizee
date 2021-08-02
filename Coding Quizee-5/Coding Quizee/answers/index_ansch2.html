@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="D:\Web Development\Coding Quizee\css\styles1.css">
+  <link rel="icon" href="../css/favicon.ico">
+
+  <title>Coding Quizee | Answers | C# Intermediate</title>
+</head>
+
+<body>
+  <div class="container-fluid con1">
+    <div class="container-fluid co_an">
+      <h1 class="ac1">C# - Intermediate Level</h1>
+      <a class="btn btn-primary but2" href="../indexans.html" role="button">Back</a>
+    </div>
+
+    <div class="container-fluid con_ans_exp">
+      <p class="main">1 .  What will be the output of the following C# code? <br> </p>
+      <p class="sub"> public class sample  <br>
+                      {  <br>
+                      public static int x = 100; <br>
+                      public static int y = 150;   <br>
+                      } <br>
+                      public class newspaper : sample <br>
+                      { <br>
+                      new public static int x = 1000; <br>
+                      static void Main(string[] args) <br>
+                      { <br>
+                      console.writeline(sample.x + " " + sample.y + " " + x); <br>
+                      } <br>
+                      } <br> </p>
+      <p class="sub1">a) 100 150 1000 <br>
+                      b) 1000 150 1000 <br>
+                      c) 100 100 1000 <br>
+                      d) 150 150 100 <br> </p>
+            <p class="main">Answer: a <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: sample.x = 100, sample.y = 150, variable within scope of main() is x = 1000
+        </div>
+      </div>
+        <br>
+
+      <p class="main">2 . What will be the output of the following C# code? <br> </p>
+      <p class="sub"> class A <br>
+                           { <br>
+                               public int i; <br>
+                               public void display() <br>
+                               { <br>
+                                   Console.WriteLine(i); <br>
+                               } <br>
+                           }     <br>
+                           class B: A <br>
+                           { <br>
+                               public int j; <br>
+                               public void display() <br>
+                               { <br>
+                                   Console.WriteLine(j); <br>
+                               } <br>
+                           }     <br>
+                           class Program <br>
+                           { <br>
+                               static void Main(string[] args) <br>
+                               { <br>
+                                   B obj = new B(); <br>
+                                   obj.i = 1; <br>
+                                   obj.j = 2; <br>
+                                   obj.display(); <br>
+                                   Console.ReadLine(); <br>
+                               } <br>
+                           } <br>  </p>
+      <p class="sub1">a) 0 <br>
+                      b) 2 <br>
+                      c) 1 <br>
+                      d) Compile time error <br> </p>
+            <p class="main">Answer: b <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: When method display() is called using objects of class ‘B’. The method ‘display()’ for class ‘B’ is called instead of class ‘A’ as class ‘B’ is inherited by class ‘A’.
+        </div>
+      </div>
+      <br>
+
+      <p class="main"> 3 . What will be the output of the following C# code? <br> </p>
+      <p class="sub"> namespace ConsoleApplication4 <br>
+                          {  <br>
+                          abstract class A <br>
+                          { <br>
+                          int i; <br>
+                          public abstract void display(); <br>
+                          } <br>
+                          class B: A <br>
+                          {  <br>
+                          public int j; <br>
+                          public override void display() <br>
+                          {  <br>
+                          Console.WriteLine(j); <br>
+                          }  <br>
+                          }  <br>
+                          class Program <br>
+                          { <br>
+                          static void Main(string[] args) <br>
+                          { <br>
+                          B obj = new B(); <br>
+                          obj.j = 2; <br>
+                          obj.display(); <br>
+                          Console.ReadLine(); <br>
+                          } <br>
+                          } <br>
+                          } <br> </p>
+      <p class="sub1">a) 0 <br>
+                      b) 2 <br>
+                      c) Compile time error <br>
+                      d) 1 <br> </p>
+
+            <p class="main">Answer: b <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: Here in abstract class ‘A’ abstract method display() is declared and its full implementation i.e definition is given in subclass of class ‘A’.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">4 .  What will be the output of the following C# code? <br> </p>
+      <p class="sub"> interface calc <br>
+                        { <br>
+                        void cal(int i); <br>
+                        } <br>
+                        class displayA :calc <br>
+                        { <br>
+                        public int x; <br>
+                        public void cal(int i) <br>
+                        { <br>
+                        x = i * i; <br>
+                        } <br>
+                        } <br>
+                        class displayB :calc <br>
+                        { <br>
+                        public int x; <br>
+                        public void cal(int i) <br>
+                        { <br>
+                        x = i / i; <br>
+                        } <br>
+                        } <br>
+                        class Program <br>
+                        { <br>
+                        public static void Main(string[] args) <br>
+                        { <br>
+                        displayA arr1 = new displayA(); <br>
+                        displayB arr2 = new displayB(); <br>
+                        arr1.x = 0; <br>
+                        arr2.x = 0; <br>
+                        arr1.cal(2); <br>
+                        arr2.cal(2); <br>
+                        Console.WriteLine(arr1.x + " " + arr2.x); <br>
+                        Console.ReadLine(); <br>
+                        } <br>
+                        } <br> </p>
+      <p class="sub1">a) 0 0 <br>
+                      b) 2 2 <br>
+                      c) 1 4 <br>
+                      d) 4 1 <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: class displayA executes the interface calculate by doubling the value of item. Similarly class displayB implements the interface by dividing item by item. So, variable x of class displayA stores 4 and variable x of class displayB stores 1.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">5 .  What will be the output of the following C# program? <br> </p>
+      <p class="sub"> static void Main(string[] args) <br>
+                        { <br>
+                        try  <br>
+                        { <br>
+                        int []a = {1, 2, 3, 4, 5}; <br>
+                        for (int i = 0; i < 5; ++i) <br>
+                        Console.WriteLine(a[i]); <br>
+                        int x = (1 / Convert.ToInt32(0)); <br>
+                         } <br>
+                        catch(IndexOutOfRangeException e) <br>
+                        { <br>
+                        Console.WriteLine("A");   <br>
+                         } <br>
+                        catch(ArithmeticException e) <br>
+                        {     	 <br>
+                        Console.WriteLine("B"); <br>
+                          } <br>
+                        Console.ReadLine(); <br>
+                        } <br> </p>
+      <p class="sub1">a) 1234 <br>
+                      b) 12345 <br>
+                      c) Run time error <br>
+                      d) 12345B <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: Due to occurrence of arithmetic exception here ‘B’ is printed after 12345.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">6 .  What will be the output of the following C# code? <br> </p>
+      <p class="sub">    class Program <br>
+                           { <br>
+                               public static void Main(string[] args) <br>
+                               { <br>
+                                   try <br>
+                                   { <br>
+                                       int a = 1; <br>
+                                       int b = 10 / a; <br>
+                                       try <br>
+                                       {   <br>
+                                           if (a == 1) <br>
+                                               a = a / a - a; <br>
+                                           if (a == 2) <br>
+                                           { <br>
+                                               int[] c = { 1 }; <br>
+                                               c[8] = 9; <br>
+                                           } <br>
+                                       } <br>
+                                       finally <br>
+                                       { <br>
+                                           Console.WriteLine("A"); <br>
+                                       } <br>
+                                  } <br>
+                                  catch (IndexOutOfRangeException e) <br>
+                                  { <br>
+                                       Console.WriteLine("B"); <br>
+                                  } <br>
+                                  Console.ReadLine(); <br>
+                              } <br>
+                           } <br> </p>
+      <p class="sub1">a) A <br>
+                      b) B <br>
+                      c) AB <br>
+                      d) BA <br> </p>
+            <p class="main">Answer: a <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+      Explanation: The inner try block does not have a catch which can tackle IndexOutOfRangeException hence finally is executed which prints ‘A’. The outer try block does have catch for IndexOutOfBoundException exception but no such exception occurs in it hence its catch is never executed and only ‘A’ is printed.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">7 .  What will be the output of the following C# program? <br> </p>
+      <p class="sub">  class Output <br>
+                           { <br>
+                               public static void main(String args[]) <br>
+                               { <br>
+                                   try  <br>
+                                   { <br>
+                                       int a = 9; <br>
+                                       int b = 5; <br>
+                                       int c = a / b - 5; <br>
+                                       Console.WriteLine("Hello"); <br>
+                                   } <br>
+                                   catch(Exception e) <br>
+                                   { <br>
+                                       Console.WriteLine("C"); <br>
+                                   }  <br>
+                                   finally <br>
+                                   { <br>
+                                       Console.WriteLine("sharp"); <br>
+                                   } <br>
+                               } <br>
+                           }  <br> </p>
+      <p class="sub1">a) Hello <br>
+                      b) C <br>
+                      c) Hellosharp <br>
+                      d) Csharp <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: finally block execution takes place after the tryblock, no matter exception is found or not. catch block is executed only when exception is found. Here divide by zero exception is found hence both catch and finally are executed.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">8 .  What will be the output of the following C# code? <br> </p>
+      <p class="sub">static void Main(string[] args) <br>
+                       { <br>
+                           Console.WriteLine("This is a Console Application:");  <br>
+                           Console.Write("Please enter your lucky number:"); <br>
+                           string val1 = Console.ReadLine(); <br>
+                           int val2 = System.Convert.ToInt32(val1, 10); <br>
+                           val2 = val2 * val2; <br>
+                           Console.WriteLine("square of number is:" +val2); <br>
+                           Console.Read(); <br>
+                       } <br> </p>
+      <p class="sub1">  a) Compile time error <br>
+                        b) Runs successfully does not print anything <br>
+                        c) Runs successfully, ask for input and hence displays the result <br>
+                        d) Syntax Error <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+      Explanation:The program runs successfully and asks for input like <br>
+                   Please enter your lucky number: 3 <br>
+                   Square of number is : 9 <br>
+        </div>
+      </div>
+      <br>
+
+      <p class="main">9 .  What will be the output of the following C# code? <br> </p>
+      <p class="sub">  static void Main(string[] args) <br>
+                         { <br>
+                             Console.WriteLine("what is your name?"); <br>
+                             char s; <br>
+                             s = Convert.ToChar(Console.ReadLine()); <br>
+                             Console.WriteLine("how are you: "+s); <br>
+                             Console.Read(); <br>
+                         } <br> </p>
+      <p class="sub1">a) Compile time error <br>
+                      b) Code run successfully prints nothing on console <br>
+                      c) Code runs successfully prints input on console <br>
+                      d) Run time error <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: Since only a single character is required to be entered on console when a string is entered, a run time exception is being generated as we had not used Read() which reads single character but used readLine() which reads string and is converted into the char using convert.tochar().
+        </div>
+      </div>
+      <br>
+
+      <p class="main">10 .  What will be the output of the following C# program? <br> </p>
+      <p class="sub"> class Program <br>
+                         { <br>
+                             static void Main(string[] args) <br>
+                             { <br>
+                                 int i = 5; <br>
+                                 int j; <br>
+                                 method1(ref i); <br>
+                                 method2(out j); <br>
+                                 Console.writeline(i + "  " + j); <br>
+                             } <br>
+                             static void method1(ref int x) <br>
+                             {  <br>
+                                 x = x + x; <br>
+                             } <br>
+                             static void method2(out int x) <br>
+                             { <br>
+                                 x = 6; <br>
+                                 x = x * x; <br>
+                             } <br>
+                         } <br> </p>
+      <p class="sub1">a) 36, 10 <br>
+                      b) 10, 36 <br>
+                      c) 0, 0 <br>
+                      d) 36, 0 <br> </p>
+            <p class="main">Answer: b <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: Variable ‘i’ is passed as reference parameter declared with ‘ref’ modifier and variable ‘j’ is passed as a output parameter declared with ‘out’ keyword. Reference parameter used to pass value by reference is the same with out parameter.
+        </div>
+      </div>
+      <br>
+
+    </div>
+
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>

@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="D:\Web Development\Coding Quizee\css\styles1.css">
+  <link rel="icon" href="../css/favicon.ico">
+
+  <title>Coding Quizee | Answers | Java Basic</title>
+</head>
+
+<body>
+  <div class="container-fluid con1">
+    <div class="container-fluid co_an">
+      <h1 class="ac1">Java - Basic Level</h1>
+      <a class="btn btn-primary but2" href="../indexans.html" role="button">Back</a>
+    </div>
+
+    <div class="container-fluid con_ans_exp">
+      <p class="main">1 .  What will be the output of the following Java statement? <br> </p>
+      <p class="sub">class output { <br>
+                      public static void main(String args[]) <br>
+                      { <br>
+                          double a, b,c; <br>
+                          a = 3.0/0; <br>
+                          b = 0/4.0; <br>
+                          c=0/0.0; <br>
+                                   <br>
+                    System.out.println(a); <br>
+                          System.out.println(b); <br>
+                          System.out.println(c); <br>
+                      } <br>
+                  } <br> </p>
+      <p class="sub1">a) Infinity <br>
+                      b) 0.0 <br>
+                      c) NaN <br>
+                      d) all of the mentioned  <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: For floating point literals, we have constant value to represent (10/0.0) infinity either positive or negative and also have NaN <br>
+        (not a number for undefined like 0/0.0), but for the integral type, we don’t have any constant that’s why we get an arithmetic exception.
+        </div>
+      </div>
+        <br>
+
+      <p class="main">2 . What will be the output of the following Java program? <br> </p>
+      <p class="sub">class mainclass { <br>
+                        public static void main(String args[]) <br>
+                        { <br>
+                            boolean var1 = true; <br>
+                	    boolean var2 = false; <br>
+                	    if (var1) <br>
+                	        System.out.println(var1); <br>
+                	    else <br>
+                	        System.out.println(var2); <br>
+                       }  <br>
+                    } <br>
+      <p class="sub1">a) 0 <br>
+                      b) 1 <br>
+                      c) true <br>
+                      d) false <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: Since var1 is true it enters into if loop.
+        </div>
+      </div>
+      <br>
+
+      <p class="main"> 3 . What will be the output of the following java code? <br> </p>
+      <p class="sub">class array_output <br>
+                      { <br>
+                          public static void main(String args[]) <br>
+                          { <br>
+                              int array_variable [] = new int[10]; <br>
+                        for (int i = 0; i < 10; ++i)  <br>
+                              { <br>
+                                  array_variable[i] = i; <br>
+                                  System.out.print(array_variable[i] + " "); <br>
+                                  i++; <br>
+                              } <br>
+                          } <br>
+                      } <br> </p>
+      <p class="sub1">a) 0 2 4 6 8 <br>
+                      b) 1 3 5 7 9 <br>
+                      c) 0 1 2 3 4 5 6 7 8 9 <br>
+                      d) 1 2 3 4 5 6 7 8 9 10 <br> </p>
+            <p class="main">Answer: a <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: When an array is declared using new operator then all of its elements are initialized to 0 automatically. for loop body is executed 5 times as whenever controls comes in the loop  i value is incremented twice, first by i++ in body of loop then by ++i in increment condition of for loop.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">4 .  What will be the output of the following Java code? <br> </p>
+      <p class="sub">class Output <br>
+                        { <br>
+                            public static void main(String args[])  <br>
+                            {    <br>
+                                 int x , y = 1; <br>
+                                 x = 10; <br>
+                                 if (x != 10 && x / 0 == 0) <br>
+                                     System.out.println(y); <br>
+                                 else <br>
+                                     System.out.println(++y); <br>
+                            } <br>
+                        }<br> </p>
+      <p class="sub1">a) 1 <br>
+                      b) 2 <br>
+                      c) Runtime error owing to division by zero in if condition <br>
+                      d) Unpredictable behavior of program <br> </p>
+            <p class="main">Answer: b <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+      Explanation: Operator short circuit and, &&, skips evaluating right hand operand if left hand operand is false thus division by zero in if condition does not give an error.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">5 .  What will be the output of the following Java program? <br> </p>
+      <p class="sub">class Output <br>
+                        { <br>
+                            public static void main(String args[]) <br>
+                            {    <br>
+                                 int a = 5; <br>
+                                 int b = 10; <br>
+                                 first: <br>
+                                 { <br>
+                                    second: <br>
+                                    { <br>
+                                       third: <br>
+                                       { <br>
+                                           if (a ==  b >> 1) <br>
+                                               break second; <br>
+                                       } <br>
+                                       System.out.println(a); <br>
+                                    } <br>
+                                    System.out.println(b); <br>
+                                 } <br>
+                            } <br>
+                        } <br> </p>
+      <p class="sub1">a) 5 10 <br>
+                      b) 10 5 <br>
+                      c) 5 <br>
+                      d) 10  <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: b >> 1 in if returns 5 which is equal to a i:e 5, therefore body of if is executed and block second is exited. Control goes to end of the block second executing the last print statement, printing 10.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">6 .  What will be the output of the following Java code? <br> </p>
+      <p class="sub">class operators <br>
+                        { <br>
+                            public static void main(String args[]) <br>
+                            { <br>
+                                int var1 = 5; <br>
+                                int var2 = 6; <br>
+                                int var3; <br>
+                                var3 = ++ var2 * var1 / var2 + var2; <br>
+                                System.out.print(var3); <br>
+                            }  <br>
+                        } <br> </p>
+      <p class="sub1">a) 10 <br>
+                      b) 11 <br>
+                      c) 12 <br>
+                      d) 56 <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: Operator ++ has the highest precedence than / , * and +. var2 is incremented to 7 and then used in expression, var3 = 7 * 5 / 7 + 7, gives 12.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">7 .  What will be the output of the following Java program? <br> </p>
+      <p class="sub">class main_class  <br>
+                        { <br>
+                            public static void main(String args[]) <br>
+                            { <br>
+                                int x = 9; <br>
+                                if (x == 9) <br>
+                                { <br>
+                                    int x = 8; <br>
+                                    System.out.println(x); <br>
+                                } <br>
+                            } <br>
+                        } <br> </p>
+      <p class="sub1">a) 9 <br>
+                      b) 8 <br>
+                      c) Compilation error <br>
+                      d) Runtime error  <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: Two variables with the same name can’t be created in a class.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">8 .  What will be the output of the following Java code? <br> </p>
+      <p class="sub">class test <br>
+                      { <br>
+                          int a; <br>
+                          int b; <br>
+                          void meth(int i , int j) <br>
+                          { <br>
+                              i *= 2; <br>
+                              j /= 2; <br>
+                          }    <br>
+                      }    <br>
+                      class Output <br>
+                      { <br>
+                          public static void main(String args[]) <br>
+                          { <br>
+                              test obj = new test(); <br>
+                        int a = 10; <br>
+                              int b = 20; <br>
+                              obj.meth(a , b); <br>
+                              System.out.println(a + " " + b);  <br>
+                          } <br>
+                      } <br> </p>
+      <p class="sub1">a) 10 20 <br>
+                      b) 20 10 <br>
+                      c) 20 40 <br>
+                      d) 40 20  <br> </p>
+            <p class="main">Answer: a <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: Variables a & b are passed by value, copy of their values are made on formal parameters of function meth() that is i & j. Therefore changes done on i & j are not reflected back on original arguments. a & b remain 10 & 20 respectively.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">9 .  What will be the output of the following Java statement? <br> </p>
+      <p class="sub">class access <br>
+                          { <br>
+                             static int x; <br>
+                             void increment() <br>
+                             { <br>
+                                 x++; <br>
+                             }   <br>
+                           }   <br>
+                          class static_use <br>
+                          { <br>
+                              public static void main(String args[]) <br>
+                              { <br>
+                                  access obj1 = new access(); <br>]
+                                  access obj2 = new access(); <br>
+                                  obj1.x = 0;   <br>
+                                  obj1.increment(); <br>
+                                  obj2.increment(); <br>
+                                  System.out.println(obj1.x + " " + obj2.x); <br>
+                               } <br>
+                         } <br> </p>
+      <p class="sub1">a) 1 2 <br>
+                      b) 1 1 <br>
+                      c) 2 2 <br>
+                      d) Compilation Error  <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: All objects of class share same static variable, all the objects share same copy of static members, obj1.x and obj2.x refer to same element of class which has been incremented twice and its value is 2.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">10 .  What will be the output of the following Java program? <br> </p>
+      <p class="sub">class recursion <br>
+                        { <br>
+                            int func (int n) <br>
+                            { <br>
+                                int result; <br>
+                                result = func (n - 1); <br>
+                                return result; <br>
+                            } <br>
+                        }  <br>
+                        class Output <br>
+                        { <br>
+                            public static void main(String args[]) <br>
+                            { <br>
+                                recursion obj = new recursion() ; <br>
+                                System.out.print(obj.func(12)); <br>
+                            } <br>
+                        } <br> </p>
+      <p class="sub1">a) 0 <br>
+                      b) 1 <br>
+                      c) Compilation Error <br>
+                      d) Runtime Error  <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: Since the base case of the recursive function func() is not defined hence infinite loop occurs and results in Stack Overflow.
+        </div>
+      </div>
+      <br>
+
+    </div>
+
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>

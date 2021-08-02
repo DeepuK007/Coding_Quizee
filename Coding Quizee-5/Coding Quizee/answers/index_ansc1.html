@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/styles1.css">
+  <link rel="icon" href="../css/favicon.ico">
+
+  <title>Coding Quizee | Answers | C Basic</title>
+</head>
+
+<body>
+  <div class="container-fluid con1">
+    <div class="container-fluid co_an">
+      <h1 class="ac1">C - Basic Level</h1>
+      <a class="btn btn-primary but2" href="../indexans.html" role="button">Back</a>
+    </div>
+
+    <div class="container-fluid con_ans_exp">
+      <p class="main">1 . What will be the output of the following C code? <br> </p>
+      <p class="sub">  #include <<x>stdio.h> <br>
+        void foo(const int *); <br>
+        int main() <br>
+        { <br>
+            const int i = 10; <br>
+            printf("%d ", i); <br>
+            foo(&i); <br>
+            printf("%d", i); <br>
+             <br>
+        } <br>
+        void foo(const int *i) <br>
+        { <br>
+            *i = 20; <br>
+        }<br>
+      </p>
+      <p class="sub1">a) Compile time error <br>
+                      b) 10 20 <br>
+                      c) Undefined value <br>
+                      d) 10 <br> </p>
+            <p class="main">Answer: a <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: Cannot change a const type value.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">2 . What will be the output of the following C code? <br> </p>
+      <p class="sub">#include <<x>stdio.h> <br>
+                      void main() <br>
+                      { <br>
+                          int k = 4; <br>
+                          int *const p = &k; <br>
+                          int r = 3; <br>
+                          p = &r; <br>
+                          printf("%d", p); <br>
+                      } <br>
+      </p>
+      <p class="sub1">a) Address of k <br>
+                      b) Address of r <br>
+                      c) Compile time error <br>
+                      d) Address of k + address of r <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: Since the pointer p is declared to be constant, trying to assign it with a new value results in an error.
+        </div>
+      </div>
+
+      <p class="main">3 . What will be the output of the following C code? <br> </p>
+      <p class="sub">#include <<x>stdio.h> <br>
+                        int main() <br>
+                        { <br>
+                            int a = 10; <br>
+                            if (a == a--) <br>
+                                printf("TRUE 1\t"); <br>
+                            a = 10; <br>
+                            if (a == --a) <br>
+                                printf("TRUE 2\t");
+                        }<br>
+      </p>
+      <p class="sub1">a) TRUE 1 <br>
+                      b) TRUE 2 <br>
+                      c) TRUE 1  TRUE 2 <br>
+                      d) Compiler Dependent <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: This is a sequence point problem and hence the result will be implementation dependent.
+        </div>
+      </div>
+      <p class="main">4 . What will be the output of the following C code? <br> </p>
+      <p class="sub">#include <<x>stdio.h> <br>
+                      void main() <br>
+                      { <br>
+                          char *ch; <br>
+                          printf("enter a value between 1 to 3:"); <br>
+                          scanf("%s", ch); <br>
+                          switch (ch) <br>
+                          { <br>
+                             case "1": <br>
+                                printf("1"); <br>
+                                break; <br>
+                             case "2": <br>
+                                printf("2"); <br>
+                                break; <br>
+                          } <br>
+                      } <br>
+      </p>
+      <p class="sub1">a) 1 <br>
+                      b) 2 <br>
+                      c) Compile time error <br>
+                      d) No Compile time error  <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: beacause int connot be used as string
+        </div>
+      </div>
+
+      <p class="main">5 . What will be the output of the following C code? <br> </p>
+      <p class="sub">#include <<x>stdio.h> <br>
+                      void main() <br>
+                      { <br>
+                          int i = 0; <br>
+                          while (i < 10) <br>
+                          { <br>
+                              i++; <br>
+                              printf("hi\n"); <br>
+                              while (i < 8)  <br>
+                              { <br>
+                                  i++; <br>
+                                  printf("hello\n"); <br>
+                              } <br>
+                          } <br>
+                      }<br>
+      </p>
+      <p class="sub1">a) Hi is printed 8 times, hello 7 times and then hi 2 times <br>
+                      b) Hi is printed 10 times, hello 7 times <br>
+                      c) Hi is printed once, hello 7 times <br>
+                      d) Hi is printed once, hello 7 times and then hi 2 times  <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: since i is a single variable it will bw updated in both the while loops
+        </div>
+      </div>
+
+      <p class="main">6 . What will be the output of the following C code? <br> </p>
+      <p class="sub">#include <<x>stdio.h> <br>
+                      int main() <br>
+                      { <br>
+                          int i = 0; <br>
+                          do <br>
+                          { <br>
+                              i++; <br>
+                              if (i == 2) <br>
+                                  continue; <br>
+                                  printf("In while loop "); <br>
+                          } while (i < 2); <br>
+                          printf("%d\n", i); <br>
+                      }<br>
+      </p>
+      <p class="sub1">a) In while loop 2 <br>
+                      b) In while loop in while loop 3 <br>
+                      c) In while loop 3 <br>
+                      d) Infinite loop <br> </p>
+            <p class="main">Answer: a <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: When i increaments to 2 it prints the In while loop and then comes out of the loop and prints value of i i.e 2
+        </div>
+      </div>
+
+      <p class="main">7 . What will be the output of the following C code? <br> </p>
+      <p class="sub">#include <<x>stdio.h> <br>
+                        int main() <br>
+                        { <br>
+                            int i = 0, j = 0; <br>
+                            while (i < 2) <br>
+                            { <br>
+                              li: i++; <br>
+                                while (j < 3) <br>
+                                { <br>
+                                    printf("loop\n"); <br>
+                                    goto l1; <br>
+                                }
+                            }
+                       }<br>
+      </p>
+      <p class="sub1">a) loop loop <br>
+                      b) Compile time error <br>
+                      c) loop loop loop loop <br>
+                      d) Infinite loop <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: Since j < 3 is always true it enters into infinite loop
+        </div>
+      </div>
+
+      <p class="main">8 . What will be the output of the following C code? <br> </p>
+      <p class="sub">#include <<x>stdio.h> <br>
+                      int main() <br>
+                      { <br>
+                          void foo(); <br>
+                          void f() <br>
+                          { <br>
+                              foo(); <br>
+                          } <br>
+                          f(); <br>
+                      } <br>
+                      void foo() <br>
+                      { <br>
+                          printf("2 "); <br>
+                      }<br>
+      </p>
+      <p class="sub1">a) 2 2 <br>
+                      b) 2 <br>
+                      c) Compile time error <br>
+                      d) Depends on the compiler <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: Even though the answer is 2, this code will compile fine only with gcc. GNU C supports nesting of functions in C as a language extension whereas standard C compiler doesn’t.
+        </div>
+      </div>
+
+      <p class="main">9 . Which of the following is an external variable in the following C code? <br> </p>
+      <p class="sub">#include <<x>stdio.h> <br>
+                      int func (int a) <br>
+                      { <br>
+                          int b; <br>
+                          return b; <br>
+                      } <br>
+                      int main() <br>
+                      { <br>
+                          int c; <br>
+                          func (c); <br>
+                      } <br>
+                      int d;<br>
+      </p>
+      <p class="sub1">a) a <br>
+                b) b <br>
+                c) c <br>
+                d) d  <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: d is the only variable which is not present in the loop
+        </div>
+      </div>
+
+      <p class="main">10 . What will be the output of the following C code? <br> </p>
+      <p class="sub">#include <<x>stdio.h> <br>
+                      int main() <br>
+                      { <br>
+                          foo(); <br>
+                          foo(); <br>
+                      } <br>
+                      void foo() <br>
+                      { <br>
+                          int i = 11; <br>
+                          printf("%d ", i); <br>
+                          static int j = 12; <br>
+                          j = j + 1; <br>
+                          printf("%d\n", j); <br>
+                      }<br>
+      </p>
+      <p class="sub1">a) 11 12 11 12
+                      b) 11 12 11 14
+                      c) 11 12 11 13
+                      d) Compile time error  <br> </p>
+            <p class="main">Answer: b <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: Since foo is called 2 times and j is increamented the outut will be 11 13 11 14
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>

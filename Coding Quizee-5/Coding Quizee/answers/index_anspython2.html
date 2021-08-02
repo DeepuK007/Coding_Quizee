@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="D:\Web Development\Coding Quizee\css\styles1.css">
+  <link rel="icon" href="../css/favicon.ico">
+
+  <title>Coding Quizee | Answers | Python Intermediate</title>
+</head>
+
+<body>
+  <div class="container-fluid con1">
+    <div class="container-fluid co_an">
+      <h1 class="ac1">Python - Intermediate Level</h1>
+      <a class="btn btn-primary but2" href="../indexans.html" role="button">Back</a>
+    </div>
+
+    <div class="container-fluid con_ans_exp">
+      <p class="main">1 .  What will be the output of the following Python code? <br> </p>
+      <p class="sub"> names1 = ['Amir', 'Bear', 'Charlton', 'Daman'] <br>
+                      names2 = names1 <br>
+                      names3 = names1[:] <br>
+                                         <br>
+                      names2[0] = 'Alice' <br>
+                      names3[1] = 'Bob' <br>
+                                         <br>
+                      sum = 0         <br>
+                      for ls in (names1, names2, names3): <br>
+                          if ls[0] == 'Alice': <br>
+                              sum += 1 <br>
+                          if ls[1] == 'Bob': <br>
+                              sum += 10 <br>
+                                       <br>
+                      print sum<br> </p>
+      <p class="sub1">a) 11 <br>
+                      b) 12 <br>
+                      c) 21 <br>
+                      d) 22 <br> </p>
+            <p class="main">Answer: b <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: When assigning names1 to names2, we create a second reference to the same list. Changes to names2 affect names1. When assigning the slice of all elements in names1 to names3, we are creating a full copy of names1 which can be modified independently.
+        </div>
+      </div>
+        <br>
+
+      <p class="main">2 . What will be the output of the following Python code? <br> </p>
+      <p class="sub"> myList = [1, 5, 5, 5, 5, 1] <br>
+                      max = myList[0]  <br>
+                      indexOfMax = 0 <br>
+                      for i in range(1, len(myList)): <br>
+                          if myList[i] > max: <br>
+                              max = myList[i] <br>
+                              indexOfMax = i <br>
+                                               <br>
+                      >>>print(indexOfMax) <br>
+      <p class="sub1">a) 1 <br>
+                      b) 2 <br>
+                      c) 3 <br>
+                      d) 4 <br> </p>
+            <p class="main">Answer: a <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: First time the highest number is encountered is at index 1.
+        </div>
+      </div>
+      <br>
+
+      <p class="main"> 3 . What will be the output of the following python code? <br> </p>
+      <p class="sub"> A = [[1, 2, 3], <br>
+                           [4, 5, 6], <br>
+                           [7, 8, 9]] <br>
+                      B = [[3, 3, 3], <br>
+                           [4, 4, 4], <br>
+                           [5, 5, 5]] <br>
+                      [B[row][col]*A[row][col] for row in range(3) for col in range(3)]<br> </p>
+      <p class="sub1">a) [3, 6, 9, 16, 20, 24, 35, 40, 45] <br>
+                      b) Error <br>
+                      c) [0, 30, 60, 120, 160, 200, 300, 350, 400] <br>
+                      d) 0 <br>
+                      <br> </p>
+            <p class="main">Answer: a <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+            Explanation: In the code shown above, we have used list comprehension to combine values of multiple matrices. We have multiplied the elements of the matrix B with that of the matrix A, in the range(3). Hence the output of this code is: [3, 6, 9, 16, 20, 24, 35, 40, 45].
+        </div>
+      </div>
+      <br>
+
+      <p class="main">4 .  What will be the output of the following python code? <br> </p>
+      <p class="sub"> numberGames = {} <br>
+                      numberGames[(1,2,4)] = 8 <br>
+                      numberGames[(4,2,1)] = 10 <br>
+                      numberGames[(1,2)] = 12 <br>
+                      sum = 0 <br>
+                      for k in numberGames: <br>
+                          sum += numberGames[k] <br>
+                      print len(numberGames) + sum<br> </p>
+      <p class="sub1">a) 30 <br>
+                      b) 24 <br>
+                      c) 33 <br>
+                      d) 12 <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+              Explanation: Tuples can be used for keys into dictionary. The tuples can have mixed length and the order of the items in the tuple is considered when comparing the equality of the keys.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">5 .  What will be the output of the following python program? <br> </p>
+      <p class="sub"> a = [5,5,6,7,7,7] <br>
+                      b = set(a) <br>
+                      def test(lst): <br>
+                          if lst in b: <br>
+                              return 1 <br>
+                          else:    <br>
+                              return 0 <br>
+                      for i in  filter(test, a): <br>
+                          print(i,end=" ")<br> </p>
+      <p class="sub1">a) 5 5 6 <br>
+                      b) 5 6 7 <br>
+                      c) 5 5 6 7 7 7 <br>
+                      d) 5 6 7 7 7 <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: The filter function will return all the values from list a which are true when passed to function test. Since all the members of the set are non-duplicate members of the list, all of the values will return true. Hence all the values in the list are printed.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">6 .  What will be the output of the following python code? <br> </p>
+      <p class="sub"> s1={3, 4} <br>
+                      s2={1, 2} <br>
+                      s3=set() <br>
+                      i=0 <br>
+                      j=0 <br>
+                      for i in s1: <br>
+                          for j in s2: <br>
+                              s3.add((i,j)) <br>
+                              i+=1 <br>
+                              j+=1 <br>
+                      print(s3)<br> </p>
+      <p class="sub1">a) {(3, 4), (1, 2)} <br>
+                      b) Error <br>
+                      c) {(4, 2), (3, 1), (4, 1), (5, 2)} <br>
+                      d) {(3, 1), (4, 2)} <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: The code shown above finds the Cartesian product of the two sets, s1 and s2. The Cartesian product of these two sets is stored in a third set, that is, s3. Hence the output of this code is: {(4, 2), (3, 1), (4, 1), (5, 2)}.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">7 .  What will be the output of the following python program? <br> </p>
+      <p class="sub"> total={} <br>
+                      def insert(items): <br>
+                          if items in total: <br>
+                              total[items] += 1 <br>
+                          else: <br>
+                              total[items] = 1 <br>
+                      insert('Apple') <br>
+                      insert('Ball') <br>
+                      insert('Apple') <br>
+                      print (len(total))<br> </p>
+      <p class="sub1">a) 3 <br>
+                      b) 1 <br>
+                      c) 2 <br>
+                      d) 0  <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+    Explanation: The insert() function counts the number of occurrences of the item being inserted into the dictionary. There are only 2 keys present since the key ‘Apple’ is repeated. Thus, the length of the dictionary is 2.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">8 .  What will be the output of the following python code? <br> </p>
+      <p class="sub">def printMax(a, b): <br>
+                        if a > b: <br>
+                            print(a, 'is maximum') <br>
+                        elif a == b: <br>
+                            print(a, 'is equal to', b) <br>
+                        else: <br>
+                            print(b, 'is maximum') <br>
+                    printMax(3, 4) <br> </p>
+      <p class="sub1">a) 3 <br>
+                      b) 4 <br>
+                      c) 4 is maximum <br>
+                      d) None of the mentioned <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+      Explanation: Here, we define a function called printMax that uses two parameters called a and b. We find out the greater number using a simple if..else statement and then print the bigger number.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">9 .  What will be the output of the following python code? <br> </p>
+      <p class="sub"> class Test: <br>
+                          def __init__(self): <br>
+                              self.x = 0 <br>
+                      class Derived_Test(Test): <br>
+                          def __init__(self): <br>
+                              self.y = 1 <br>
+                      def main(): <br>
+                          b = Derived_Test() <br>
+                          print(b.x,b.y) <br>
+                      main()<br> </p>
+      <p class="sub1">a) 0 1 <br>
+                      b) 0 0 <br>
+                      c) Error because class B inherits A but variable x isn’t inherited <br>
+                      d) Error because when object is created, argument must be passed like Derived_Test(1)  <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: Since the invoking method, Test.__init__(self), isn’t present in the derived class, variable x can’t be inherited.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">10 .  What will be the output of the following python program? <br> </p>
+      <p class="sub"> valid = False <br>
+                      while not valid: <br>
+                          try: <br>
+                              n=int(input("Enter a number")) <br>
+                              while n%2==0: <br>
+                                  print("Bye") <br>
+                              valid = True <br>
+                          except ValueError: <br>
+                              print("Invalid")<br> </p>
+      <p class="sub1">a) Bye (printed once) <br>
+                      b) No output
+                      c) Invalid (printed once)
+                      d) Bye (printed infinite number of times)  <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: The code shown above results in the word “Bye” being printed infinite number of times. This is because an even number has been given as input. If an odd number had been given as input, then there would have been no output.
+        </div>
+      </div>
+      <br>
+
+    </div>
+
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>

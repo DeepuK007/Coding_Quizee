@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/styles1.css">
+  <link rel="icon" href="../css/favicon.ico">
+
+  <title>Coding Quizee | Questions | C++ Intermediate</title>
+</head>
+
+<body>
+  <div class="container-fluid con1">
+    <div class="container-fluid con2">
+      <div class="bar bar1">
+        <p class="dar">1</p>
+      </div>
+      <div class="bar bar2">
+        <p class="dar">2</p>
+      </div>
+      <div class="bar bar3">
+        <p class="dar">3</p>
+      </div>
+      <div class="bar bar4">
+        <p class="dar">4</p>
+      </div>
+      <div class="bar bar5">
+        <p class="dar">5</p>
+      </div>
+      <div class="bar bar6">
+        <p class="dar">6</p>
+      </div>
+      <div class="bar bar7">
+        <p class="dar">7</p>
+      </div>
+      <div class="bar bar8">
+        <p class="dar">8</p>
+      </div>
+      <div class="bar bar9">
+        <p class="dar">9</p>
+      </div>
+      <div class="bar bar10">
+        <p class="dar">10</p>
+      </div>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary but1" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Submit
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">C Basic</h5>
+              <button type="button" class="btn-close cls" data-bs-dismiss="modal" aria-label="Close">X</button>
+            </div>
+            <div class="modal-body bod">
+              <ul>
+                <li class="f"></li>
+                <li class="s"></li>
+                <li>Please review your answers once before submitting, if you have reviewed, then you can submit and check your score in scorecard.</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary but3">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid con3">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-interval="False">
+        <div class="carousel-inner">
+          <div class="carousel-item active aa">
+            <div class="container-fluid con4">
+              <p class="main">1 .  What will be the output of the following C++ code? <br> </p>
+              <p class="sub">#include <<x>iostream> <br>
+                              using namespace std; <br>
+                              class rect <br>
+                              { <br>
+                              int x, y; <br>
+                              public: <br>
+                              void val (int, int); <br>
+                              int area () <br>
+                              { <br>
+                              return (x * y); <br>
+                              } <br>
+                              }; <br>
+                              void rect::val (int a, int b) <br>
+                              { <br>
+                              x = a; <br>
+                              y = b; <br>
+                              } <br>
+                              int main () <br>
+                              { <br>
+                              rect rect; <br>
+                              rect.val (3, 4); <br>
+                              cout << "rect area: " << rect.area(); <br>
+                              return 0; <br>
+                              } <br> </p>
+            </div>
+            <div class="container-fluid con5">
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">A</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> rect area: 24 </p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">B</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">  rect area: 12 </p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">C</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> compile error because rect is as used as class name and variable name in line #20 </p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">D</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> rect area: 56 </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item bb">
+            <div class="container-fluid con4">
+              <p class="main">2 . What will be the output of the following C++ program? <br> </p>
+              <p class="sub"> #include <<x>iostream> <br>
+                              using namespace std; <br>
+                              class CDummy <br>
+                              { <br>
+                              public: <br>
+                              int isitme (CDummy& param); <br>
+                              }; <br>
+                              int CDummy::isitme (CDummy& param) <br>
+                              { <br>
+                              if (&param == this) <br>
+                              return true; <br>
+                              else <br>
+                              return false; <br>
+                              } <br>
+                              int main () <br>
+                              { <br>
+                              CDummy a; <br>
+                              CDummy *b = &a; <br>
+                              if (b->isitme(a))  <br>
+                              { <br>
+                              cout << "execute"; <br>
+                              } <br>
+                              else <br>
+                              { <br>
+                              cout<<"not execute"; <br>
+                              } <br>
+                              return 0; <br>
+                              }<br>  </p>
+            </div>
+            <div class="container-fluid con5">
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">A</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">  execute </p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">B</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> not execute</p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">C</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> error </p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">D</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> both execute & not execute  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item cc">
+            <div class="container-fluid con4">
+              <p class="main">3 . What will be the output of the following C++ code? <br> </p>
+              <p class="sub"> #include <<x>iostream> <br>
+                              #include <<x>string> <br>
+                              using namespace std; <br>
+                              class A{ <br>
+                              int a; <br>
+                              A(){ <br>
+                              a = 5; <br>
+                              } <br>
+                                    <br>
+                              public: <br>
+                              void assign(int i){ <br>
+                              a = i; <br>
+                              } <br>
+                              int return_value(){ <br>
+                              return a; <br>
+                              } <br>
+                              }; <br>
+                              int main(int argc, char const *argv[]) <br>
+                              { <br>
+                              A obj; <br>
+                              obj.assign(10); <br>
+                              cout<<obj.return_value(); <br>
+                              }  <br> </p>
+            </div>
+            <div class="container-fluid con5">
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">A</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">5 </p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">B</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> 10 </p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">C</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> Error </p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">D</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">  Segmentation fault </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item dd">
+            <div class="container-fluid con4">
+              <p class="main">4 . What will be the output of the following C++ code? <br> </p>
+              <p class="sub">#include <<x>stdio.h>  <br>
+                              #include<<x>iostream>  <br>
+                              using namespace std; <br>
+                              int main() <br>
+                              { <br>
+                                  int x = 5, y = 5, z; <br>
+                                  x = ++x; y = --y; <br>
+                                  z = x + ++x; <br>
+                                  cout << z; <br>
+                                  return 0; <br>
+                              } <br> </p>
+            </div>
+            <div class="container-fluid con5">
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">A</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> 11 </p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">B</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> 12 </p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">C</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> 13 </p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">D</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> 14 </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ee">
+            <div class="container-fluid con4">
+              <p class="main">5 . What will be the output of the following C++ program? <br> </p>
+              <p class="sub"> #include <<x>iostream> <br>
+                              #include <<x>string> <br>
+                                using namespace std; <br>
+                                class A <br>
+                                { <br>
+                                int a; <br>
+                                public: <br>
+                                virtual void func() = 0; <br>
+                                }; <br>
+                                            <br>
+                                class B: public A <br>
+                                { <br>
+                                public: <br>
+                                void func(){ <br>
+                                cout<<"Class B"<<endl; <br>
+                                }	<br>
+                                }; <br>
+                                      <br>
+                                int main(int argc, char const *argv[]) <br>
+                                { <br>
+                                B b; <br>
+                                b.func(); <br>
+                                return 0; <br>
+                                }<br> </p>
+            </div>
+            <div class="container-fluid con5">
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">A</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">Class B </p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">B</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> Error </p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">C</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> Segmentation fault </p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">D</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> No output </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ff">
+            <div class="container-fluid con4">
+              <p class="main">6 . What will be the output of the following C++ code? <br> </p>
+              <p class="sub">   #include <<x>iostream> <br>
+                                using namespace std; <br>
+                                void Division(const double a, const double b); <br>
+                                int main() <br>
+                                { <br>
+                                    double op1=0, op2=10; <br>
+                                    try  <br>
+                                    { <br>
+                                        Division(op1, op2); <br>
+                                    } <br>
+                                    catch (const char* Str) <br>
+                                    { <br>
+                                        cout << "\nBad Operator: " << Str; <br>
+                                    } <br>
+                                    return 0; <br>
+                                } <br>
+                                void Division(const double a, const double b) <br>
+                                { <br>
+                                    double res; <br>
+                                    if (b == 0) <br>
+                                        throw "Division by zero not allowed"; <br>
+                                    res = a / b; <br>
+                                    cout << res; <br>
+                                }<br> </p>
+            </div>
+            <div class="container-fluid con5">
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">A</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> 0 </p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">B</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> Bad operator </p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">C</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> 10 </p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">D</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> 15 </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item gg">
+            <div class="container-fluid con4">
+              <p class="main">7 .  What will be the output of the following C++ program? <br> </p>
+              <p class="sub">  #include <<x>iostream> <br>
+                              #include <<x>functional>  <br>
+                              #include <<x>algorithm> <br>
+                              using namespace std; <br>
+                              int main () <br>
+                              { <br>
+                              int first[] = {10, 40, 90}; <br>
+                              int second[] = {1, 2, 3}; <br>
+                              int results[5]; <br>
+                              transform ( first, first + 5, second, results, divides<int>()); <br>
+                              for (int i = 0; i < 3; i++) <br>
+                              cout << results[i] << " "; <br>
+                              return 0; <br>
+                              }<br> </p>
+            </div>
+            <div class="container-fluid con5">
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">A</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> 10 20 </p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">B</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> 20 30 </p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">C</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> 10 20 30 </p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">D</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> 20 40 </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item hh">
+            <div class="container-fluid con4">
+              <p class="main">8 .  What will be the output of the following C++ code? <br> </p>
+              <p class="sub">#include <<x>iostream> <br>
+                            #include <<x>functional> <br>
+                            #include <<x>algorithm> <br>
+                            using namespace std; <br>
+                            int main () <br>
+                            { <br>
+                            int numbers[] = {10, -20, -30, 40, -50}; <br>
+                            int cx; <br>
+                            cx = count_if ( numbers, numbers + 5, bind2nd(less<int>(), 0) ); <br>
+                            cout << cx; <br>
+                            return 0; <br>
+                            }<br> </p>
+            </div>
+            <div class="container-fluid con5">
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">A</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> 1 </p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">B</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> 2 </p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">C</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> 3 </p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">D</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> 4 </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ii">
+            <div class="container-fluid con4">
+              <p class="main">9. What will be the output of the following C++ code? <br> </p>
+              <p class="sub">  #include <<x>iostream> <br>
+                              #include<<x>iterator> <br>
+                              #include<<x>vector> <br>
+                              using namespace std; <br>
+                              int main() <br>
+                              { <br>
+                              vector<<x>int> ar = { 1, 2, 3, 4, 5 }; <br>
+                              vector<<x>int>::iterator ptr = ar.begin(); <br>
+                              advance(ptr, 2); <br>
+                              cout << *ptr << endl; <br>
+                              return 0; <br>
+                              } <br> </p>
+            </div>
+            <div class="container-fluid con5">
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">A</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> 2 </p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">B</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> 3 </p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">C</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> 4 </p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">D</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text"> 5 </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item jj">
+            <div class="container-fluid con4">
+              <p class="main">10. What will be the output of the following C++ program? <br> </p>
+              <p class="sub">  #include <<x>iostream> <br>
+                              #include <<x>set> <br>
+                              using namespace std; <br>
+                              int main() <br>
+                              { <br>
+                              set<<x>int> tst; <br>
+                              tst.insert(12); <br>
+                              tst.insert(21); <br>
+                              tst.insert(32); <br>
+                              tst.insert(31); <br>
+                              set<<x>int> :: const_iterator pos; <br>
+                              for(pos = tst.begin(); pos != tst.end(); ++pos) <br>
+                              cout << *pos << ' '; <br>
+                              return 0; <br>
+                              } <br> </p>
+            </div>
+            <div class="container-fluid con5">
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">A</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">12 21 32 31</p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">B</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">12 21 31 32</p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">C</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">12 21 32</p>
+                </div>
+              </div>
+              <div class="choice-container">
+                <div class="choice-prefix">
+                  <p class="pre">D</p>
+                </div>
+                <div class="choice-text">
+                  <p class="text">12 21 31</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev ctr ctr1" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon ctrl-prev" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next ctr ctr2" href="#carouselExampleControls" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon ctrl-nxt" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../js/c++2.js" charset="utf-8"></script>
+</body>
+
+</html>

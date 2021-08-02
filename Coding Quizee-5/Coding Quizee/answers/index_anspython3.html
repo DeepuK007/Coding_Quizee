@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="D:\Web Development\Coding Quizee\css\styles1.css">
+  <link rel="icon" href="../css/favicon.ico">
+
+  <title>Coding Quizee | Answers | Python Advanced</title>
+</head>
+
+<body>
+  <div class="container-fluid con1">
+    <div class="container-fluid co_an">
+      <h1 class="ac1">Python - Advanced Level</h1>
+      <a class="btn btn-primary but2" href="../indexans.html" role="button">Back</a>
+    </div>
+
+    <div class="container-fluid con_ans_exp">
+      <p class="main">1 .  What will be the output of the following Python code? <br> </p>
+      <p class="sub">def f(p, q, r): <br>
+                        global s <br>
+                        p = 10 <br>
+                        q = 20 <br>
+                        r = 30 <br>
+                        s = 40 <br>
+                        print(p,q,r,s) <br>
+                    p,q,r,s = 1,2,3,4 <br>
+                    f(5,10,15) <br> </p>
+      <p class="sub1">a) 1 2 3 4 <br>
+                      b) 5 10 15 4 <br>
+                      c) 10 20 30 40 <br>
+                      d) 5 10 15 40<br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: The above code shows a combination of local and global variables. The output of this code is: 10 20 30 40.
+        </div>
+      </div>
+        <br>
+
+      <p class="main">2 . What will be the output of the following Python code? <br> </p>
+      <p class="sub"> l=[] <br>
+                      def convert(b): <br>
+                          if(b==0): <br>
+                              return l <br>]
+                          dig=b%2 <br>
+                          l.append(dig) <br>
+                          convert(b//2) <br>
+                      convert(6) <br>
+                      l.reverse() <br>
+                      for i in l: <br>
+                          print(i,end="") <br>
+      <p class="sub1">a) 011 <br>
+                      b) 110 <br>
+                      c) 3 <br>
+                      d) Infinite loop <br> </p>
+            <p class="main">Answer: b <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+      Explanation: The above code gives the binary equivalent of the number
+        </div>
+      </div>
+      <br>
+
+      <p class="main"> 3 . What will be the output of the following python code? <br> </p>
+      <p class="sub"> l1=[10, 20, 30] <br>
+                      l2=l1 <br>
+                      id(l1)==id(l2) <br>
+                                       <br>
+                      l2=l1.copy() <br>
+                      id(l1)==id(l2)<br> </p>
+      <p class="sub1">a) False, False <br>
+                      b) False, True <br>
+                      c) True, True <br>
+                      d) True, False <br>
+                      <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+            Explanation: The first code shown above represents shallow copy. Hence the output of the expression id(l1)==id(l2) is True. The second code depicts deep copy. Hence the output of the expression id(l1)==id(l2) in the second case is False.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">4 .  What will be the output of the following python code? <br> </p>
+      <p class="sub"> odd=lambda x: bool(x%2) <br>
+                      numbers=[n for n in range(10)] <br>
+                      print(numbers) <br>
+                      n=list() <br>
+                      for i in numbers: <br>
+                          if odd(i): <br>
+                              continue <br>
+                          else: <br>
+                              break<br> </p>
+      <p class="sub1">a) [0, 2, 4, 6, 8, 10] <br>
+                      b) [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] <br>
+                      c) [1, 3, 5, 7, 9] <br>
+                      d) Error <br> </p>
+            <p class="main">Answer: b <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+              Explanation: The code shown above returns a new list containing whole numbers up to 10 (excluding 10). Hence the output of the code is: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].
+        </div>
+      </div>
+      <br>
+
+      <p class="main">5 .  What will be the output of the following python program? <br> </p>
+      <p class="sub"> Case 1: <br>
+                      for i in range(0,10): <br>
+                      	turtle.forward(100) <br>
+                      	turtle.left(90) <br>
+                      Case 2: <br>
+                      for i in range(1,10): <br>
+                      	turtle.forward(100) <br>
+                      	turtle.left(90)<br> </p>
+      <p class="sub1">a) 10, 9 <br>
+                      b) 9, 10 <br>
+                      c) 9, 9 <br>
+                      d) 10, 10 <br> </p>
+            <p class="main">Answer: a <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+      Explanation: The number of lines drawn in the first case is 10, while that in the second case is 9.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">6 .  What will be the output of the following python code? <br> </p>
+      <p class="sub"> random.seed(3) <br>
+                      random.randint(1,5) <br>
+                      2 <br>
+                      random.seed(3) <br>
+                      random.randint(1,5)<br> </p>
+      <p class="sub1">a) 3 <br>
+                      b) 2 <br>
+                      c) Any integer between 1 and 5, including 1 and 5 <br>
+                      d) Any integer between 1 and 5, excluding 1 and 5 <br> </p>
+            <p class="main">Answer: b <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: We use the seed function when we want to use the same random number once again in our program. Hence the output of the code shown above will be 2, since 2 was generated previously following which we used the seed function.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">7 .  What will be the output of the following python program? <br> </p>
+      <p class="sub"> f = None <br>
+                      for i in range (5): <br>
+                          with open("data.txt", "w") as f: <br>
+                              if i > 2: <br>
+                                  break <br>
+                      print(f.closed)<br> </p>
+      <p class="sub1">a) True <br>
+                      b) False <br>
+                      c) None <br>
+                      d) Error <br> </p>
+            <p class="main">Answer: a <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+    Explanation: The WITH statement when used with open file guarantees that the file object is closed when the with block exits.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">8 .  What will be the output of the following python code? <br> </p>
+      <p class="sub">fo = open("foo.txt", "rw+") <br>
+                    print "Name of the file: ", fo.name <br>
+                                                         <br>
+                    # Assuming file has following 5 lines <br>
+                    # This is 1st line <br>
+                    # This is 2nd line <br>
+                    # This is 3rd line <br>
+                    # This is 4th line <br>
+                    # This is 5th line <br>
+                                       <br>
+                    for index in range(5): <br>
+                       line = fo.next() <br>
+                       print "Line No %d - %s" % (index, line) <br>
+                                                 <br>
+                    # Close opened file <br>
+                    fo.close() <br> </p>
+      <p class="sub1">a) Compilation Error <br>
+                      b) Syntax Error <br>
+                      c) Displays Output <br>
+                      d) None of the mentioned <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+      Explanation: It displays the output as shown below. The method next() is used when a file is used as an iterator, typically in a loop, the next() method is called repeatedly. This method returns the next input line, or raises StopIteration when EOF is hit.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">9 .  What will be the output of the following python code? <br> </p>
+      <p class="sub"> sentence = 'horses are fast' <br>
+                      regex = re.compile('(?P<animal>\w+) (?P<verb>\w+) (?P<adjective>\w+)') <br>
+                      matched = re.search(regex, sentence) <br>
+                      print(matched.groupdict())<br> </p>
+      <p class="sub1">a) {‘animal’: ‘horses’, ‘verb’: ‘are’, ‘adjective’: ‘fast’} <br>
+                      b) (‘horses’, ‘are’, ‘fast’) <br>
+                      c) ‘horses are fast’ <br>
+                      d) ‘are’  <br> </p>
+            <p class="main">Answer: a <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: This function returns a dictionary that contains all the matches.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">10 .  What will be the output of the following python program? <br> </p>
+      <p class="sub"> def foo(x): <br>
+                      x[0] = ['def'] <br>
+                      x[1] = ['abc'] <br>
+                      return id(x) <br>
+                  q = ['abc', 'def'] <br>
+                  print(id(q) == foo(q))<br> </p>
+      <p class="sub1">a) True <br>
+                      b) False <br>
+                      c) None <br>
+                      d) Error <br> </p>
+            <p class="main">Answer: a <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: The same object is modified in the function.
+        </div>
+      </div>
+      <br>
+
+    </div>
+
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>

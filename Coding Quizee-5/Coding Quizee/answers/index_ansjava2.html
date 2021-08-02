@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="D:\Web Development\Coding Quizee\css\styles1.css">
+  <link rel="icon" href="../css/favicon.ico">
+
+  <title>Coding Quizee | Answers | Java Intermediate</title>
+</head>
+
+<body>
+  <div class="container-fluid con1">
+    <div class="container-fluid co_an">
+      <h1 class="ac1">Java - Intermediate Level</h1>
+      <a class="btn btn-primary but2" href="../indexans.html" role="button">Back</a>
+    </div>
+
+    <div class="container-fluid con_ans_exp">
+      <p class="main">1 .  What will be the output of the following Java program? <br> </p>
+      <p class="sub">class A <br>
+                      { <br>
+                          int i; <br>
+                          public void display() <br>
+                          { <br>
+                              System.out.println(i); <br>
+                          }    <br>
+                      }    <br>
+                      class B extends A <br>
+                     { <br>
+                          int j; <br>
+                          public void display() <br>
+                          { <br>
+                              System.out.println(j); <br>
+                          } <br>
+                      }    <br>
+                      class Dynamic_dispatch <br>
+                     { <br>
+                          public static void main(String args[]) <br>
+                          { <br>
+                              B obj2 = new B(); <br>
+                              obj2.i = 1; <br>
+                              obj2.j = 2; <br>
+                              A r; <br>
+                              r = obj2; <br>
+                              r.display();  <br>
+                          } <br>
+                     } <br> </p>
+      <p class="sub1">a) 1 <br>
+                    b) 2 <br>
+                    c) 3 <br>
+                    d) 4  <br> </p>
+            <p class="main">Answer: b <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: r is reference of type A, the program assigns a reference of object obj2 to r and uses that reference to call function display() of class B.
+        </div>
+      </div>
+        <br>
+
+      <p class="main">2 . What will be the output of the following Java program? <br> </p>
+      <p class="sub"> class A <br>
+                        { <br>
+                            int i; <br>
+                            void display() <br>
+                            { <br>
+                                System.out.println(i); <br>
+                            } <br>
+                        }    <br>
+                        class B extends A <br>
+                        { <br>
+                            int j; <br>
+                            void display() <br>
+                            { <br>
+                                System.out.println(j); <br>
+                            } <br>
+                        }    <br>
+                        class inheritance_demo <br>
+                        { <br>
+                            public static void main(String args[]) <br>
+                            { <br>
+                                B obj = new B(); <br>
+                                obj.i=1; <br>
+                                obj.j=2;   <br>
+                                obj.display(); <br>
+                            } <br>
+                       } <br>
+      <p class="sub1">a) 0 <br>
+                      b) 1 <br>
+                      c) 2 <br>
+                      d) Compilation Error<br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: Class A & class B both contain display() method, class B inherits class A, when display() method is called by object of class B, display() method of class B is executed rather than that of Class A.
+        </div>
+      </div>
+      <br>
+
+      <p class="main"> 3 . What will be the output of the following java code? <br> </p>
+      <p class="sub">class exception_handling <br>
+                        { <br>
+                            public static void main(String args[]) <br>
+                            { <br>
+                                try <br>
+                                { <br>
+                                    int a, b; <br>
+                                    b = 0; <br>
+                                    a = 5 / b; <br>
+                                    System.out.print("A"); <br>
+                                } <br>
+                                catch(ArithmeticException e) <br>
+                                { <br>
+                              System.out.print("B");  <br>
+                                } <br>
+                                finally <br>
+                                { <br>
+                                  System.out.print("C"); <br>
+                                } <br>
+                            } <br>
+                        }  <br> </p>
+      <p class="sub1">a) A <br>
+                      b) B <br>
+                      c) AC <br>
+                      d) BC <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: finally keyword is used to execute the code before try and catch block end.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">4 .  What will be the output of the following Java code? <br> </p>
+      <p class="sub">class exception_handling <br>
+                        { <br>
+                            public static void main(String args[]) <br>
+                            { <br>
+                                try <br>
+                                { <br>
+                                    throw new NullPointerException ("Hello"); <br>
+                                    System.out.print("A"); <br>
+                                } <br>
+                                catch(ArithmeticException e) <br>
+                                { <br>
+                              System.out.print("B"); <br>
+                                } <br>
+                            } <br>
+                        }<br> </p>
+      <p class="sub1">a) A <br>
+                      b) B <br>
+                      c) Compilation Error <br>
+                      d) Runtime Error <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+    Explanation: try block is throwing NullPointerException but the catch block is used to counter Arithmetic Exception. Hence NullPointerException occurs since no catch is there which can handle it, runtime error occurs.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">5 .  What will be the output of the following Java program? <br> </p>
+      <p class="sub">class newthread extends Thread <br>
+                          { <br>
+                        newthread() <br>
+                              { <br>
+                            super("My Thread"); <br>
+                            start(); <br>
+                        } <br>
+                        public void run() <br>
+                              { <br>
+                            System.out.println(this); <br>
+                        } <br>
+                          } <br>
+                          class multithreaded_programing <br>
+                          { <br>
+                              public static void main(String args[]) <br>
+                              { <br>
+                                  new newthread();  <br>
+                              } <br>
+                          }<br> </p>
+      <p class="sub1">a) My Thread <br>
+                      b) Thread[My Thread,5,main] <br>
+                      c) Compilation Error <br>
+                      d) Runtime Error <br> </p>
+            <p class="main">Answer: b <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: Explanation: Although we have not created any object of thread class still we can make a thread pointing to main method, we can refer it by using this.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">6 .  What will be the output of the following Java program? <br> </p>
+      <p class="sub"> class newthread extends Thread <br>]
+                        { <br>
+                    	Thread t; <br>
+                    	newthread() <br>
+                            { <br>
+                    	    t1 = new Thread(this,"Thread_1"); <br>
+                    	    t2 = new Thread(this,"Thread_2"); <br>
+                    	    t1.start(); <br>
+                    	    t2.start(); <br>
+                    	} <br>
+                    	public void run() <br>
+                            { <br>
+                    	    t2.setPriority(Thread.MAX_PRIORITY);	<br>
+                    	    System.out.print(t1.equals(t2)); <br>
+                        }    <br>
+                      } <br>
+                        class multithreaded_programing <br>
+                        { <br>
+                            public static void main(String args[]) <br>
+                            { <br>
+                                new newthread(); <br>
+                            } <br>
+                        } <br> </p>
+      <p class="sub1">a) true <br>
+                      b) false <br>
+                      c) truetrue <br>
+                      d) falsefalse <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: This program was previously done by using Runnable interface, here we have used Thread class. This shows both the method are equivalent, we can use any of them to create a thread.
+      </div>
+        </div>
+      <br>
+
+      <p class="main">7 .  What will be the output of the following Java program? <br> </p>
+      <p class="sub">package pkg; <br>
+    class output <br>
+    { <br>
+        public static void main(String args[]) <br>
+        { <br>
+            StringBuffer s1 = new StringBuffer("Hello World"); <br>
+            s1.insert(6 , "Good "); <br>
+            System.out.println(s1); <br>
+        } <br>
+   }<br> </p>
+      <p class="sub1">a) HelloGoodWorld <br>
+                      b) HellGoodoWorld <br>
+                      c) Compilation error <br>
+                      d) Runtime error  <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: Since output.class file is not in the directory pkg in which class output is defined, program will not be able to run.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">8 .  What will be the output of the following Java code? <br> </p>
+      <p class="sub">import java.util.*; <br>
+                    public class genericstack <E> <br>
+                    { <br>
+                        Stack <E> stk = new Stack <E>(); <br>
+                	public void push(E obj) <br>
+                        { <br>
+                            stk.push(obj); <br>
+                	} <br>
+                	public E pop() <br>
+                        { <br>
+                            E obj = stk.pop(); <br>
+                	    return obj; <br>
+                	} <br>
+                } <br>
+                    class Output <br>
+                    { <br>
+                        public static void main(String args[]) <br>
+                        { <br>
+                            genericstack <Integer> gs = new genericstack<Integer>(); <br>
+                            gs.push(36); <br>
+                            System.out.println(gs.pop()); <br>
+                        } <br>
+                    }<br> </p>
+      <p class="sub1">a) H <br>
+                      b) Hello <br>
+                      c) Runtime Error <br>
+                      d) Compilation Error <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: genericstack’s object gs is defined to contain a string parameter but we are sending an integer parameter, which results in compilation error.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">9 .  What will be the output of the following Java statement? <br> </p>
+      <p class="sub">class multithreaded_programing <br>
+                        { <br>
+                            public static void main(String args[]) <br>
+                            { <br>
+                                Thread t = Thread.currentThread(); <br>
+                                t.setName("New Thread"); <br>
+                                System.out.println(t.getName()); <br>
+                            } <br>
+                        } <br> </p>
+      <p class="sub1">a) main <br>
+                      b) Thread <br>
+                      c) New Thread <br>
+                      d) Thread[New Thread,5,main]  <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: The getName() function is used to obtain the name of the thread, in this code the name given to thread is ‘New Thread’.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">10 .  What will be the output of the following Java program? <br> </p>
+      <p class="sub">class exception_handling <br>
+                        { <br>
+                            public static void main(String args[]) <br>
+                            { <br>
+                                try <br>
+                                { <br>
+                                    int a = 1; <br>
+                                    int b = 10 / a; <br>
+                                    try  <br>
+                                    { <br>
+                                         if (a == 1) <br>
+                                             a = a / a - a; <br>
+                                         if (a == 2)  <br>
+                                         { <br>
+                                             int c[] = {1}; <br>
+                                             c[8] = 9; <br>
+                                         } <br>
+                                    } <br>
+                                    finally <br>
+                                    { <br>
+                                        System.out.print("A"); <br>
+                                    } <br>
+                                } <br>
+                                catch (Exception e) <br>
+                                { <br>
+                                        System.out.println("B"); <br>
+                                } <br>
+                            } <br>
+                        } <br> </p>
+      <p class="sub1">a) A <br>
+                      b) B <br>
+                      c) AB <br>
+                      d) BA  <br> </p>
+            <p class="main">Answer: a <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+      Explanation: The inner try block does not have a catch which can tackle ArrayIndexOutOfBoundException hence finally is executed which prints ‘A’ the outer try block does have catch for ArrayIndexOutOfBoundException exception but no such exception occurs in it hence its catch is never executed and only ‘A’ is printed.
+        </div>
+      </div>
+      <br>
+
+    </div>
+
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>

@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="D:\Web Development\Coding Quizee\css\styles1.css">
+  <link rel="icon" href="../css/favicon.ico">
+
+  <title>Coding Quizee | Answers | C++ Intermediate</title>
+</head>
+
+<body>
+  <div class="container-fluid con1">
+    <div class="container-fluid co_an">
+      <h1 class="ac1">C++ - Intermediate Level</h1>
+      <a class="btn btn-primary but2" href="../indexans.html" role="button">Back</a>
+    </div>
+
+    <div class="container-fluid con_ans_exp">
+      <p class="main">1 .  What will be the output of the following C++ code? <br> </p>
+      <p class="sub"> #include <<x>iostream> <br>
+                      using namespace std; <br>
+                      class rect <br>
+                      { <br>
+                      int x, y; <br>
+                      public: <br>
+                      void val (int, int); <br>
+                      int area () <br>
+                      { <br>
+                      return (x * y); <br>
+                      } <br>
+                      }; <br>
+                      void rect::val (int a, int b) <br>
+                      { <br>
+                      x = a; <br>
+                      y = b; <br>
+                      } <br>
+                      int main () <br>
+                      { <br>
+                      rect rect; <br>
+                      rect.val (3, 4); <br>
+                      cout << "rect area: " << rect.area(); <br>
+                      return 0; <br>
+                      } <br> </p>
+      <p class="sub1">a) rect area: 24 <br>
+                      b) rect area: 12 <br>
+                      c) compile error because rect is as used as class name and variable name in line #20 <br>
+                      d) rect area: 56 <br> </p>
+            <p class="main">Answer: b <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+    Explanation: In this program, we are calculating the area of rectangle based on given values.
+        </div>
+      </div>
+        <br>
+
+      <p class="main">2 . What will be the output of the following C++ code? <br> </p>
+      <p class="sub"> #include <<x>iostream> <br>
+                      using namespace std; <br>
+                      class CDummy <br>
+                      { <br>
+                      public: <br>
+                      int isitme (CDummy& param); <br>
+                      }; <br>
+                      int CDummy::isitme (CDummy& param) <br>
+                      { <br>
+                      if (&param == this) <br>
+                      return true; <br>
+                      else <br>
+                      return false; <br>
+                      } <br>
+                      int main () <br>
+                      { <br>
+                      CDummy a; <br>
+                      CDummy *b = &a; <br>
+                      if (b->isitme(a))  <br>
+                      { <br>
+                      cout << "execute"; <br>
+                      } <br>
+                      else <br>
+                      { <br>
+                      cout<<"not execute"; <br>
+                      } <br>
+                      return 0; <br>
+                      } <br> </p>
+      <p class="sub1">a) execute <br>
+                      b) not execute <br>
+                      c) error <br>
+                      d) both execute & not execute <br> </p>
+            <p class="main">Answer: a <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+      Explanation: In this program, we are just pointing the pointer to a object and printing execute if it is correctly pointed.
+        </div>
+      </div>
+      <br>
+
+      <p class="main"> 3 . What will be the output of the following C++ code? <br> </p>
+      <p class="sub">#include <<x>iostream> <br>
+                      #include <<x>string> <br>
+                      using namespace std; <br>
+                      class A{ <br>
+                      int a; <br>
+                      A(){ <br>
+                      a = 5; <br>
+                      } <br>
+                            <br>
+                      public: <br>
+                      void assign(int i){ <br>
+                      a = i; <br>
+                      } <br>
+                      int return_value(){ <br>
+                      return a; <br>
+                      } <br>
+                      }; <br>
+                      int main(int argc, char const *argv[]) <br>
+                      { <br>
+                      A obj; <br>
+                      obj.assign(10); <br>
+                      cout<<obj.return_value(); <br>
+                      } <br> </p>
+      <p class="sub1">a) 5 <br>
+                      b) 10 <br>
+                      c) Error <br>
+                      d) Segmentation fault <br> </p>
+
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+            Explanation: Here the constructor is made private and as no object can access any private object directly therefore the program will give error. One should always define a constructor as public.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">4 .  What will be the output of the following C++ code? <br> </p>
+      <p class="sub">#include <<x>stdio.h>  <br>
+                      #include<<x>iostream>  <br>
+                      using namespace std; <br>
+                      int main() <br>
+                      { <br>
+                          int x = 5, y = 5, z; <br>
+                          x = ++x; y = --y; <br>
+                          z = x + ++x; <br>
+                          cout << z; <br>
+                          return 0; <br>
+                      } <br> </p>
+      <p class="sub1">a) 11 <br>
+                      b) 12 <br>
+                      c) 13 <br>
+                      d) 14<br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+              Explanation: In this program, we are adding the x value after pre incrementing two times.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">5 .  What will be the output of the following C++ program? <br> </p>
+      <p class="sub"> #include <<x>iostream> <br> <br>
+                      #include <<x>string> <br>
+                        using namespace std; <br>
+                        class A <br>
+                        { <br>
+                        int a; <br>
+                        public: <br>
+                        virtual void func() = 0; <br>
+                        }; <br>
+                                    <br>
+                        class B: public A <br>
+                        { <br>
+                        public: <br>
+                        void func(){ <br>
+                        cout<<"Class B"<<endl; <br>
+                        }	<br>
+                        }; <br>
+                              <br>
+                        int main(int argc, char const *argv[]) <br>
+                        { <br>
+                        B b; <br>
+                        b.func(); <br>
+                        return 0; <br>
+                        }<br> </p>
+      <p class="sub1">a) Class B <br>
+                      b) Error <br>
+                      c) Segmentation fault <br>
+                      d) No output <br> </p>
+            <p class="main">Answer: a <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+    Explanation: The program is correct so no error occurs hence the program runs successfully and b is calling is func() function therefore “Class B” is printed.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">6 .  What will be the output of the following C++ code? <br> </p>
+      <p class="sub">   #include <<x>iostream> <br>
+                        using namespace std; <br>
+                        void Division(const double a, const double b); <br>
+                        int main() <br>
+                        { <br>
+                            double op1=0, op2=10; <br>
+                            try  <br>
+                            { <br>
+                                Division(op1, op2); <br>
+                            } <br>
+                            catch (const char* Str) <br>
+                            { <br>
+                                cout << "\nBad Operator: " << Str; <br>
+                            } <br>
+                            return 0; <br>
+                        } <br>
+                        void Division(const double a, const double b) <br>
+                        { <br>
+                            double res; <br>
+                            if (b == 0) <br>
+                                throw "Division by zero not allowed"; <br>
+                            res = a / b; <br>
+                            cout << res; <br>
+                        }<br> </p>
+      <p class="sub1">a) 0 <br>
+                      b) Bad operator <br>
+                      c) 10 <br>
+                      d) 15 <br> </p>
+            <p class="main">Answer: a <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+      Explanation: We are dividing 0 and 10 in this program and we are using the throw statement in the function block.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">7 .  What will be the output of the following C++ program? <br> </p>
+      <p class="sub">  #include <<x>iostream> <br>
+                      #include <<x>functional>  <br>
+                      #include <<x>algorithm> <br>
+                      using namespace std; <br>
+                      int main () <br>
+                      { <br>
+                      int first[] = {10, 40, 90}; <br>
+                      int second[] = {1, 2, 3}; <br>
+                      int results[5]; <br>
+                      transform ( first, first + 5, second, results, divides<int>()); <br>
+                      for (int i = 0; i < 3; i++) <br>
+                      cout << results[i] << " "; <br>
+                      return 0; <br>
+                      } <br> </p>
+      <p class="sub1">a) 10 20 <br>
+                      b) 20 30 <br>
+                      c) 10 20 30 <br>
+                      d) 20 40 <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: In this program, We are dividing the first with the second by using function objects.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">8 .  What will be the output of the following C++ code? <br> </p>
+      <p class="sub">#include <<x>iostream> <br>
+                    #include <<x>functional> <br>
+                    #include <<x>algorithm> <br>
+                    using namespace std; <br>
+                    int main () <br>
+                    { <br>
+                    int numbers[] = {10, -20, -30, 40, -50}; <br>
+                    int cx; <br>
+                    cx = count_if ( numbers, numbers + 5, bind2nd(less<int>(), 0) ); <br>
+                    cout << cx; <br>
+                    return 0; <br>
+                    } <br> </p>
+      <p class="sub1">a) 1 <br>
+                      b) 2 <br>
+                      c) 3 <br>
+                      d) 4 <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+      Explanation: In this program, We are calculating the number of negative elements present in the program by using function objects.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">9 .  What will be the output of the following C++ code? <br> </p>
+      <p class="sub">  #include <<x>iostream> <br>
+                      #include<<x>iterator> <br>
+                      #include<<x>vector> <br>
+                      using namespace std; <br>
+                      int main() <br>
+                      { <br>
+                      vector<<x>int> ar = { 1, 2, 3, 4, 5 }; <br>
+                      vector<<x>int>::iterator ptr = ar.begin(); <br>
+                      advance(ptr, 2); <br>
+                      cout << *ptr << endl; <br>
+                      return 0; <br>
+                      }<br> </p>
+      <p class="sub1">a) 2 <br>
+                      b) 3 <br>
+                      c) 4 <br>
+                      d) 5 <br> </p>
+            <p class="main">Answer: b <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: Initially the ptr is pointing to first element of vector and now as we are advancing the iterator by 2 which takes the iterator the value 3. Hence the output is 3.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">10 .  What will be the output of the following C++ program? <br> </p>
+      <p class="sub"> #include <<x>iostream> <br>
+                      #include <<x>set> <br>
+                      using namespace std; <br>
+                      int main() <br>
+                      { <br>
+                      set<<x>int> tst; <br>
+                      tst.insert(12); <br>
+                      tst.insert(21); <br>
+                      tst.insert(32); <br>
+                      tst.insert(31); <br>
+                      set<<x>int> :: const_iterator pos; <br>
+                      for(pos = tst.begin(); pos != tst.end(); ++pos) <br>
+                      cout << *pos << ' '; <br>
+                      return 0; <br>
+                      } <br> </p>
+      <p class="sub1">a) 12 21 32 31 <br>
+                      b) 12 21 31 32 <br>
+                      c) 12 21 32 <br>
+                      d) 12 21 31 <br> </p>
+            <p class="main">Answer: b <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: In this program, We are using const_iterator to sort the data
+        </div>
+      </div>
+      <br>
+
+    </div>
+
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>

@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="D:\Web Development\Coding Quizee\css\styles1.css">
+  <link rel="icon" href="../css/favicon.ico">
+
+  <title>Coding Quizee | Answers | C Advanced</title>
+</head>
+
+<body>
+  <div class="container-fluid con1">
+    <div class="container-fluid co_an">
+      <h1 class="ac1">C - Advanced</h1>
+      <a class="btn btn-primary but2" href="../indexans.html" role="button">Back</a>
+    </div>
+
+    <div class="container-fluid con_ans_exp">
+      <p class="main">1 . What will be the output of the following C code? <br> </p>
+      <p class="sub">  #include <<x>assert. h>  <br>
+                      #include <<x>stdio.h><br>
+                       #include <<x>stdlib.h> <br>
+                      void -Assert (char *mesg) <br>
+                      { <br>
+                         fputs (mesg, stderr); <br>
+                         fputs (" -- assertion failed\n" , stderr); <br>
+                         abort () ;  <br>
+                      } <br>
+      </p>
+      <p class="sub1">a) prints only assertion message <br>
+                      b) program is just aborted <br>
+                      c) prints assertion message and aborts <br>
+                      d) no action takes place <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: The given function uses assert function as defined in assert.h.The program writes assertion message on the stanard error file(stderr) and then calls abort() function to terminate the execution of the program.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">2 . What will be the output of the following C code? <br> </p>
+      <p class="sub">#include <<x>assert.h> <br>
+                      #include <<x>stdio.h>   <br>
+                      void main() <br>
+                      {  <br>
+                         int n=11; <br>
+                         char str[50]="program"; <br>
+                         assert(n >= 10); <br>
+                         printf(" output: %d\n", n); <br>
+                         assert(str != NULL); <br>
+                         printf("output: %s\n", str); <br>
+                      }<br>
+      </p>
+      <p class="sub1">a) output: 11
+                        b) error message
+                        c) output: 11
+                           output: program
+                        d) output: program <br>
+                       <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: The condition defined in the macro assert is true hence the statements following it are displayed.
+        </div>
+      </div>
+
+      <p class="main">3 . What will be the output of the following C code? <br> </p>
+      <p class="sub">   #include<<x>stdio.h> <br>
+                        #include<<x>stdlib.h> <br>
+                        #include<<x>time.h> <br>
+                        typedef struct tm tm; <br>
+                        int main() <br>
+                        { <br>
+                            time_t ct; <br>
+                            time(&ct); <br>
+                            tm *mt=localtime(&ct); <br>
+                            printf("%d\n",mt-> tm_year); <br>
+                        }<br>
+      </p>
+      <p class="sub1">a) 17 <br>
+                      b) 2017 <br>
+                      c) error <br>
+                      d) 117<br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: All variables inside the constructer should be given values when the constructer is called
+        </div>
+      </div>
+      <p class="main">4 . What will be the output of the following C code? <br> </p>
+      <p class="sub">#include<<x>stdio.h> <br>
+                      #include<<x>stdlib.h> <br>
+                      #include<<x>time.h> <br>
+                      int main() <br>
+                      { <br>
+                          time_t ct; <br>
+                          time(&ct); <br>
+                          struct tm *mt=localtime(&ct); <br>
+                          printf("%d\n",mt-> tm_date); <br>
+                      } <br>
+      </p>
+      <p class="sub1">a) 22 <br>
+                      b) 6 <br>
+                      c) 22/6 <br>
+                      d) error  <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: The code shown above results in an error. This is because tm_date is not a specified function under time.h.
+        </div>
+      </div>
+
+      <p class="main">5 . What will be the output of the following C code? <br> </p>
+      <p class="sub">#include<<x>stdio.h> <br>
+                      #include<<x>stdlib.h> <br>
+                      main() <br>
+                      { <br>
+                          int *p; <br>
+                          p=(int*)calloc(3*sizeof(int)); <br>
+                          printf("Enter first number\n"); <br>
+                          scanf("%d",p); <br>
+                          printf("Enter second number\n"); <br>
+                          scanf("%d",p+2); <br>
+                          printf("%d%d",*p,*(p+2)); <br>
+                          free(p); <br>
+                      }<br>
+      </p>
+      <p class="sub1">a) 56 <br>
+                      b) Address of the locations where the two numbers are stored <br>
+                      c) 57 <br>
+                      d) Error <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: The above code results in an error. This is because the syntax of the function calloc() is incorrect. In order to rectify this error, we must write: calloc(3,sizeof(int));
+        </div>
+      </div>
+
+      <p class="main">6 . What will be the output of the following C code? <br> </p>
+      <p class="sub">#include<<x>stdio.h> <br>
+                      #include<<x>stdlib.h> <br>
+                      main() <br>
+                      { <br>
+                          int *a; <br>
+                          a=(int*)malloc(sizeof(int)); <br>
+                          *a=100; <br>
+                          printf("*a%d",*a); <br>
+                          free(a); <br>
+                          a=(int*)malloc(sizeof(int)); <br>
+                          *a=200; <br>
+                          printf("a%p",a); <br>
+                          *a=200; <br>
+                          printf("a%d" ,*a); <br>
+                      }<br>
+      </p>
+      <p class="sub1">a) Error <br>
+                      b) Memory leak <br>
+                      c) Dangling pointer arises <br>
+                      d) 200 is printed as output<br> </p>
+            <p class="main">Answer: b <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: The pointer ‘a’ points to the recent value 200, making the memory allocated earlier inaccessible. Hence, the memory where the value 100 is inaccessible and cannot be freed. Therefore, memory leak occurs.
+        </div>
+      </div>
+
+      <p class="main">7 . What will be the output of the following C code? <br> </p>
+      <p class="sub">#include<<x>stdio.h> <br>
+                      #include<<x>stdlib.h> <br>
+                      #include<<x>string.h> <br>
+                      int main() <br>
+                      { <br>
+                          char *p; <br>
+                          *p = (char)calloc(10); <br>
+                          strcpy(p, "HELLO"); <br>
+                          printf("%s", p); <br>
+                          free(p); <br>
+                          return 0; <br>
+                      }<br>
+      </p>
+      <p class="sub1">a) No error <br>
+                      b) Error in the statement: strcpy(p,”HELLO”); <br>
+                      c) Error in the statement: *p=(char)calloc(10); <br>
+                      d) Error in the statement: free(p); <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: The syntax for dynamically allocating memory using calloc() is incorrect. Hence, this code results in an error. The correct syntax for calloc is: void*calloc(size_t n, size_t size);
+        </div>
+      </div>
+
+      <p class="main">8 . What will be the output of the following C code? <br> </p>
+      <p class="sub">#include <<x>stdio.h> <br>
+                          void inline func1(float b) <br>
+                          { <br>
+                              printf ("%lf\n",b*2); <br>
+                          } <br>
+                          int main() <br>
+                          { <br>
+                               inline func1(2.2); <br>
+                               return 0; <br>
+                          } <br>
+      </p>
+      <p class="sub1">a) No error <br>
+                      b) Error in statement: void inline func1(float b) <br>
+                      c) Error in statement: printf(“%lf\n”,b*2); <br>
+                      d) Error in statement: inline func1(2.2); <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: The keyword inline is used only with the function definition. In the code shown above it has been used with the function call. Hence there is an error in the statement: inline func1(2.2);
+        </div>
+      </div>
+
+      <p class="main">9 . Which of the following is an external variable in the following C code? <br> </p>
+      <p class="sub">#include <<x>stdio.h> <br>
+                      int main() <br>
+                      { <br>
+                         unsigned int i = 1; <br>
+                         char *a = (char*)&i; <br>
+                         if (*a) <br>
+                             printf("Little endian"); <br>
+                         else <br>
+                             printf("Big endian"); <br>
+                         getchar(); <br>
+                         return 0; <br>
+                      }<br>
+      </p>
+      <p class="sub1">a) -1 <br>
+                      b) 0 <br>
+                      c) 1 <br>
+                      d) 2 <br> </p>
+            <p class="main">Answer: b <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: In the code shown above, a character pointer ‘a’ points to an integer ‘i’. Since the size of the character is 1 byte, when the character pointer is de-referenced, it contains 1 integer byte. If the machine is a little endian machine then the value of *a will be 1, since the last byte is stored first. If the machine is big endian, the value of *a will be 0.
+        </div>
+      </div>
+
+      <p class="main">10 . What will be the output of the following C code? <br> </p>
+      <p class="sub">#include <<x>stdio.h> <br>
+                      void inline func1(char b[10]) <br>
+                      { <br>
+                          printf ("%c\n",b[2]); <br>
+                      } <br>
+                      int main() <br>
+                      { <br>
+                           func1("sanfoundry"); <br>
+                           return 0; <br>
+                      }<br>
+      </p>
+      <p class="sub1">a) s <br>
+                      b) n <br>
+                      c) a <br>
+                      d) error  <br> </p>
+            <p class="main">Answer: b <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: In the code shown above, the definition of function func1 is replaced with its function call. The function prints the alphabet at the second index of the given string. Hence the output of this code is ‘n’.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>

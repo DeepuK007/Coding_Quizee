@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="css/favicon.ico">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+  <title>Coding Quizee | Sign up</title>
+</head>
+
+<body class="hom">
+  <nav class="navbar navbar-dark navbar-expand-lg navb ans_nav">
+    <div class="container-fluid">
+      <h1 class="head1">Coding Quizee</h1>
+      <button class="navbar-toggler tog" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="index_abt.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Quiz
+            </a>
+            <ul class="dropdown-menu ans_drop" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="index.html#c">C</a></li>
+              <li><a class="dropdown-item" href="index.html#ch">C#</a></li>
+              <li><a class="dropdown-item" href="index.html#cp">C++</a></li>
+              <li><a class="dropdown-item" href="index.html#j">Java</a></li>
+              <li><a class="dropdown-item" href="index.html#p">Python</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Answers
+            </a>
+            <ul class="dropdown-menu ans_drop" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="indexans.html#c">C</a></li>
+              <li><a class="dropdown-item" href="indexans.html#ch">C#</a></li>
+              <li><a class="dropdown-item" href="indexans.html#cp">C++</a></li>
+              <li><a class="dropdown-item" href="indexans.html#j">Java</a></li>
+              <li><a class="dropdown-item" href="indexans.html#p">Python</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Scorecard
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="index_score1.html">Your scores</a></li>
+              <li><a class="dropdown-item" href="index_score2.html">Leaderboard</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="index_con.html">Contact us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="indexl.html">Login</a>
+          </li>
+          <li class="nav-item sig">
+            <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Sign up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container log_div">
+    <div class="div_log">
+      <h1 class="hd">Sign up</h1>
+    </div>
+    <form id="form_id" method="post" action="">
+      <div class="mb-3 blk container blk0">
+        <i class="fas fa-user ico"></i>
+        <input type="text" class="form-control frm one" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required placeholder="Username">
+      </div>
+      <div class="mb-3 blk container blk11">
+        <i class="fas fa-envelope ico"></i>
+        <input type="email" class="form-control frm two" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+      </div>
+      <div class="mb-3 blk container blk21">
+        <i class="fas fa-lock ico"></i>
+        <input type="password" class="form-control frm three" id="exampleInputPassword1" placeholder="Password">
+      </div>
+      <div class="mb-3 blk container blk3">
+        <i class="fas fa-lock ico"></i>
+        <input type="password" class="form-control frm four" id="exampleInputPassword1" placeholder="Re-type Password">
+      </div>
+
+      <div class="bt">
+        <button type="submit" class="btn btn-primary btn3">Create an account</button>
+      </div>
+
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/signup.js" charset="utf-8"></script>
+</body>
+
+<footer>
+  <div class="row al fot">
+    <div class="col-sm-2">
+
+    </div>
+    <div class="col-sm-4 fot1">
+      <div class="fot11">
+        <h1>Coding Quizee</h1>
+        <p class="ft">It's a programming quiz.</p>
+      </div>
+
+    </div>
+    <div class="col-sm-3 fot2">
+      <h3>CONTENTS</h3>
+      <a href="index.html" class="ft1">Home</a> <br>
+      <a href="index_abt.html" class="ft1">About</a> <br>
+      <a href="index.html#c" class="ft1">Quiz</a> <br>
+      <a href="indexans.html#c" class="ft1">Answers</a> <br>
+      <a href="index_con.html" class="ft1">Contact us</a> <br>
+
+    </div>
+    <div class="col-sm-3 fot3">
+      <h3>FOLLOW US</h3>
+      <a href=""><i class="fab fa-facebook-f ic"></i></a>
+      <a href="#"><i class="fab fa-twitter ic"></i></a>
+      <a href="#"><i class="fab fa-instagram ic"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in ic"></i></a>
+    </div>
+  </div>
+  <div class="fot4">
+    <i class="far fa-copyright cp"></i>
+    <p class="cpt">Copyright.All rights reserved.</p>
+  </div>
+</footer>
+
+</html>

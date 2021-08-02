@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="D:\Web Development\Coding Quizee\css\styles1.css">
+  <link rel="icon" href="../css/favicon.ico">
+
+  <title>Coding Quizee | Answers | C# Basic</title>
+</head>
+
+<body>
+  <div class="container-fluid con1">
+    <div class="container-fluid co_an">
+      <h1 class="ac1">C# - Basic Level</h1>
+      <a class="btn btn-primary but2" href="../indexans.html" role="button">Back</a>
+    </div>
+
+    <div class="container-fluid con_ans_exp">
+      <p class="main">1 .  What will be the output of the following C# code? <br> </p>
+      <p class="sub"> static void Main(string[] args) <br>
+                      { <br>
+                      const int a = 5; <br>
+                      const int b = 6; <br>
+                      for (int i = 1; i <= 5; i++) <br>
+                      {  <br>
+                      a = a * i; b = b * i; <br>
+                    } <br>
+                      Console.WriteLine(a); <br>
+                       Console.WriteLine(b); <br>
+                      Console.ReadLine(); <br>
+                       } <br> </p>
+      <p class="sub1">a) 600, 720 <br>
+                      b) Compile time error <br>
+                      c) 25, 30 <br>
+                      d) 5, 6 <br> </p>
+            <p class="main">Answer: b <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: The left hand side of an assignment must be a variable, property or indexer i.e for both ‘a’ and ‘b’
+        </div>
+      </div>
+        <br>
+
+      <p class="main">2 . What will be the output of the following C# code? <br> </p>
+      <p class="sub"> static void Main(string[] args) <br>
+                        { <br>
+                        int i ; <br>
+                        for (i = 0; i < 5; i++) <br>
+                        { <br>
+                        int j = 0; j += i; <br>
+                        Console. WriteLine(j); <br>
+                      } <br>
+                        Console. WriteLine( i * j); <br>
+                        Console. ReadLine(); <br>
+                        } <br> </p>
+      <p class="sub1">a) 0, 1, 6, 18, 40 <br>
+                      b) 0, 1, 5, 20, 30 <br>
+                      c) Compile time error <br>
+                      d) 0, 1, 2, 3, 4, 5 <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+    Explanation: The scope of j is local in nature it cannot be extended outside the block in which it is defined.
+        </div>
+      </div>
+      <br>
+
+      <p class="main"> 3 . What will be the output of the following C# code? <br> </p>
+      <p class="sub"> static void Main(string[] args) <br>
+                      { <br>
+                      int a, b, c, x; <br>
+                       a = 90; <br>
+                      b = 15; <br>
+                       c = 3; <br>
+                      x = a - b / 3 + c * 2 - 1; <br>
+                      Console.WriteLine(x); <br>
+                      Console.ReadLine(); <br>
+                      } <br> </p>
+      <p class="sub1">a) 92 <br>
+                      b) 89 <br>
+                      c) 90 <br>
+                      d) 88 <br> </p>
+
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+            Explanation: The basic evaluation process includes two left to right passes through the expression. During first pass, the high priority operators are applied and during second pass, the low priority operators are applied as they are encountered.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">4 .  What will be the output of the following C# code? <br> </p>
+      <p class="sub"> static void Main(string[] args) <br>
+                      { <br>
+                       int movie = 1; <br>
+                      switch (movie << 2 + movie) <br>
+                      { <br>
+                      default: <br>
+                      Console.WriteLine("3 Idiots"); <br>
+                      break; <br>
+                      case 4: Console.WriteLine("Ghazini"); <br>
+                      break; <br>
+                      case 5: Console.WriteLine("Krishh"); <br>
+                      break; <br>
+                      case 8: <br>
+                      Console.WriteLine("Race"); <br>
+                      break; <br>
+                       } <br>
+                      Console.ReadLine(); <br>
+                      } <br> </p>
+      <p class="sub1">a) 3 Idiots <br>
+                      b) Ghazini <br>
+                      c) Race <br>
+                      d) Krishh <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+          Explanation: We can put ‘default’ case in any order and hence write cases in any order.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">5 .  What will be the output of the following C# program? <br> </p>
+      <p class="sub"> static void Main(string[] args) <br>
+                        { <br>
+                        long x; <br>
+                        x = Convert.ToInt32(Console.ReadLine()); <br>
+                        do <br>
+                        { <br>
+                        Console.WriteLine(x % 10); <br>
+                      } <br>
+                        while ((x = x / 10) != 0); <br>
+                        Console.ReadLine(); <br>
+                      } <br>
+                        enter x = 1234. <br> </p>
+      <p class="sub1">a) number of digits present in x <br>
+                      b) prints ‘1’ <br>
+                      c) prints reverse of x <br>
+                      d) prints sum of digits of ‘x’ <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+    Explanation: Reverse of digits using while loop statements.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">6 .  What will be the output of the following C# code? <br> </p>
+      <p class="sub">   static void Main(string[] args) <br>
+                           { <br>
+                               int i; <br>
+                               Console.WriteLine("enter value of i:"); <br>
+                               i = Convert.ToInt32(Console.ReadLine()); <br>
+                               if ( i % 2 == 0) <br>
+                                   goto even: <br>
+                               else <br>
+                               { <br>
+                                   Console.WriteLine("number is odd:"); <br>
+                                   Console.ReadLine(); <br>
+                               } <br>
+                               even: <br>
+                               Console.WriteLine("number is even:"); <br>
+                               Console.ReadLine(); <br>
+                           } <br>
+                          for i = 4. <br> </p>
+      <p class="sub1">a) number is odd <br>
+                      b) Compile time error <br>
+                      c) number is even <br>
+                      d) none of the mentioned <br> </p>
+            <p class="main">Answer: b <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+      Explanation: “Undefined label ‘even’ in main(). The syntax ‘goto even:’ is incorrect instead use ‘goto even;’.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">7 .  What will be the output of the following C# program? <br> </p>
+      <p class="sub">  static void Main(string[] args) <br>
+                      { <br>
+                          Mul(); <br>
+                          m(); <br>
+                          Console.ReadLine(); <br>
+                      } <br>
+                      static void Mul() <br>
+                      { <br>
+                          Console.WriteLine("4"); <br>
+                      } <br>
+                      static void m() <br>
+                      { <br>
+                          Console.WriteLine("3"); <br>
+                          Mul(); <br>
+                      }  <br> </p>
+      <p class="sub1">a)  4 3 4 <br>
+                      b) 4 4 3 <br>
+                      c) 4 3 3 <br>
+                      d) 3 4 4 <br> </p>
+            <p class="main">Answer: a <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: First Mul() will be executed to print the number ‘4’ after that function m() will be executed to print the number ‘3’ and at last mentioned function Mul() will be executed to print the statement 4 to return the output as 4 3 4.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">8 .  What will be the output of the following C# code? <br> </p>
+      <p class="sub">static void Main(string[] args) <br>
+                      { <br>
+                          int [] a = {1, 2, 3, 4, 5}; <br>
+                          fun(a); <br>
+                          Console.ReadLine(); <br>
+                      } <br>
+                      static void fun(params int[] b ) <br>
+                      { <br>
+                          int[] k = { 3, 4, 7, 8,'\0' }; <br>
+                          for (int i = 0; i < b.Length; i++) <br>
+                          { <br>
+                              b[i] = b[i] + k[i] ; <br>
+                              Console.WriteLine( b[i] + " "); <br>
+                          } <br>
+                      } <br> </p>
+      <p class="sub1">  a) Compile time error <br>
+                        b) 3, 4, 7, 8, 5 <br>
+                        c) 3, 4, 7, 8, 5, 1, 2, 3, 4, 5 <br>
+                        d) 4, 6, 10, 12, 5 <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+      Explanation: Passing of array parameters declared in main() and hence adding elements of array passed using param to another array k[] declared in fun() method.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">9 .  What will be the output of the following C# code? <br> </p>
+      <p class="sub">  class Program <br>
+                         { <br>
+                             static void Main(string[] args) <br>
+                             {  <br>
+                                 String []chars = {"z", "x", "y", "z", "y"}; <br>
+                                 for (int i = 0; i < chars.Length; ++i) <br>
+                                 for (int j = i + 1; j < chars.Length; ++j) <br>
+                                 if(chars[i].CompareTo(chars[j]) == 0) <br>
+                                 Console.WriteLine(chars[j]); <br>
+                                 Console.ReadLine(); <br>
+                             } <br>
+                         } <br> </p>
+      <p class="sub1">a) zx <br>
+                      b) xy <br>
+                      c) zy <br>
+                      d) yz <br> </p>
+            <p class="main">Answer: c <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: compareTo() function returns zero when both the strings are equal, it returns a value less than zero if the invoking string is less than the other string being compared and value greater than zero when invoking string is greater than the string compared To 4.
+        </div>
+      </div>
+      <br>
+
+      <p class="main">10 .  What will be the output of the following C# program? <br> </p>
+      <p class="sub"> class sum   <br>
+                         { <br>
+                             public int x; <br>
+                             private int y; <br>
+                             public void math(int a, int b) <br>
+                             { <br>
+                                 x = a * 4; <br>
+                                 y = b; <br>
+                             } <br>
+                         }     <br>
+                         class Program <br>
+                         { <br>
+                             static void Main(string[] args) <br>
+                             { <br>
+                                 sum p = new sum(); <br>
+                                 p.math(12, 30); <br>
+                                 Console.WriteLine(p.x + "  " + p.y); <br>
+                                 Console.ReadLine(); <br>
+                             } <br>
+                         } <br> </p>
+      <p class="sub1">a) 48, 30 <br>
+                      b) 48, 0 <br>
+                      c) 0, 0 <br>
+                      d) Compile time error <br> </p>
+            <p class="main">Answer: d <br></p>
+            <p>
+        <a class="btn btn-primary pri" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+          View Explanation
+        </a>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body txt">
+        Explanation: variable ‘y’ is not accessible due to its access level.
+        </div>
+      </div>
+      <br>
+
+    </div>
+
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
